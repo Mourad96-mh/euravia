@@ -54,7 +54,11 @@ export default function HeroVideo({ title, subtitle, ctas, eyebrow, poster, sour
     // Some browsers refuse autoplay until the element is muted in the DOM, not just in JSX.
     video.muted = true;
     void video.play().catch(() => {
-      /* Autoplay blocked: the poster stays, which is a perfectly good hero. */
+      /*
+       * Autoplay blocked (iOS Low Power Mode, data saver): swap to the plain poster image,
+       * otherwise the browser paints its own play button over the hero.
+       */
+      setMotion(false);
     });
   }, [motion]);
 
@@ -72,6 +76,8 @@ export default function HeroVideo({ title, subtitle, ctas, eyebrow, poster, sour
             muted
             playsInline
             autoPlay
+            controls={false}
+            disablePictureInPicture
             preload="metadata"
             aria-hidden="true"
             tabIndex={-1}

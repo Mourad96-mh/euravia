@@ -40,6 +40,15 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+  pointer-events: none;
+}
+
+/* The hero is decoration: never let the browser draw its play/start overlay on it. */
+.video::-webkit-media-controls,
+.video::-webkit-media-controls-overlay-play-button,
+.video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
 }
 
 /*
