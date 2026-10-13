@@ -1,0 +1,359 @@
+{
+  "site": {
+    "name": "Euravia",
+    "tagline": "Verse en diepvries groente en fruit uit Marokko",
+    "description": "Euravia selecteert, verpakt en levert premium verse en IQF-diepvriesgroente en -fruit uit Marokko en het Middellandse Zeegebied aan inkopers in heel Europa. Kantoren in Utrecht en Casablanca."
+  },
+  "a11y": {
+    "skipToContent": "Naar de inhoud",
+    "mainNav": "Hoofdnavigatie",
+    "breadcrumb": "Kruimelpad"
+  },
+  "nav": {
+    "home": "Home",
+    "fresh": "Vers",
+    "frozen": "Diepvries",
+    "about": "Euravia",
+    "blog": "Blog",
+    "contact": "Contact",
+    "quote": "Offerteaanvraag",
+    "quoteShort": "Offerte",
+    "allFresh": "Alle verse producten",
+    "allFrozen": "Al het diepvriesfruit",
+    "openMenu": "Menu openen",
+    "closeMenu": "Menu sluiten",
+    "language": "Taal"
+  },
+  "categories": {
+    "fresh": {
+      "name": "Verse producten",
+      "short": "Groente en fruit, verpakt op de oogstdag",
+      "blurb": "Zongerijpte Marokkaanse groente en fruit, op het juiste moment geoogst en verpakt om in topconditie uw distributiecentrum te bereiken."
+    },
+    "vegetables": {
+      "name": "Verse groenten",
+      "short": "Tomaten, paprika, aubergines, bonen…",
+      "blurb": "Tomaten, paprika's, aubergines, courgettes en sperziebonen uit de kassengebieden van Marokko: constante maat, egale kleur en lange houdbaarheid."
+    },
+    "fruits": {
+      "name": "Vers fruit",
+      "short": "Avocado's, citrus, bessen, meloenen…",
+      "blurb": "Avocado's, citrusvruchten, bessen en meloenen geteeld tussen de Atlas en de Atlantische Oceaan, met de zoetheid, het aroma en de stevigheid die Europese consumenten verwachten."
+    },
+    "frozen": {
+      "name": "Diepvriesfruit (IQF)",
+      "short": "Aardbeien, frambozen, bramen, blauwe bessen",
+      "blurb": "Bessen die direct na de oogst individueel snelbevroren worden: kleur en smaak van vers geplukt, los en het hele jaar beschikbaar."
+    }
+  },
+  "home": {
+    "heroTitle": "Verse en diepvries groente en fruit, van Marokkaanse velden naar Europese schappen",
+    "heroText": "Premium groenten, fruit en IQF-bessen, aan de bron geselecteerd en geleverd via een beheerste koelketen.",
+    "heroPrimary": "Ontdek ons assortiment",
+    "heroSecondary": "Offerte aanvragen",
+    "eyebrow": "Euravia",
+    "title": "Uw betrouwbare toegang tot de beste verse en diepvriesproducten van het Middellandse Zeegebied",
+    "lead": "Wij selecteren, verpakken en leveren premium groente en fruit rechtstreeks uit de vruchtbaarste regio's van Marokko, Spanje en het bredere Middellandse Zeegebied.",
+    "paragraphs": [
+      "Euravia is opgericht vanuit een passie voor landbouwkwaliteit en betrouwbare logistiek, en slaat de brug tussen zonovergoten kustbedrijven en wereldwijde markten.",
+      "Of u nu verse producten nodig heeft die op het hoogtepunt van hun rijpheid zijn geplukt, of individueel snelbevroren (IQF) fruit dat zijn voedingswaarde en smaak behoudt: onze internationale klanten krijgen de hoogste kwaliteit, precies wanneer ze die nodig hebben."
+    ],
+    "pillarsTitle": "Vijf redenen om bij Euravia in te kopen",
+    "pillars": [
+      {
+        "title": "Zongerijpte herkomst",
+        "text": "Vruchtbare regio's zoals Souss-Massa en de Atlantische kust, bijna het hele jaar zon."
+      },
+      {
+        "title": "Vroeg in het seizoen",
+        "text": "Marokko oogst wanneer de Europese productie laag is, zodat uw schappen vol blijven."
+      },
+      {
+        "title": "Koelketen & IQF",
+        "text": "Temperatuurgecontroleerd van veld tot levering, en bessen direct na de oogst bevroren."
+      },
+      {
+        "title": "Traceerbaar & gecertificeerd",
+        "text": "Volledige traceerbaarheid en internationale kwaliteitsnormen, waaronder GlobalG.A.P."
+      },
+      {
+        "title": "Twee kantoren, één keten",
+        "text": "Casablanca aan de bron, Utrecht dicht bij onze Europese klanten."
+      }
+    ],
+    "rangesTitle": "Ons assortiment",
+    "featuredTitle": "Populair bij onze inkopers",
+    "featuredLead": "Voeg producten toe aan uw offerteaanvraag en geef uw volumes door. Wij antwoorden met beschikbaarheid en een prijs.",
+    "officesTitle": "Van het veld in Marokko tot aan uw deur in Europa",
+    "officesText": "Ons team in Casablanca werkt aan de bron met telers en pakstations. Ons kantoor in Utrecht verzorgt Europese klanten, documenten en levering.",
+    "facts": [
+      {
+        "value": "19",
+        "label": "Producten in ons assortiment"
+      },
+      {
+        "value": "2",
+        "label": "Kantoren: Utrecht & Casablanca"
+      },
+      {
+        "value": "3",
+        "label": "Herkomstgebieden: Marokko, Spanje, Middellandse Zee"
+      },
+      {
+        "value": "−18 °C",
+        "label": "IQF-koelketen voor diepvriesfruit"
+      }
+    ],
+    "quoteTitle": "Op zoek naar een betrouwbare leverancier?",
+    "quoteText": "Vertel ons welke producten, volumes en bestemming. Wij komen terug met beschikbaarheid en een offerte.",
+    "quoteCta": "Offerte aanvragen"
+  },
+  "catalog": {
+    "addToQuote": "Aan offerte toevoegen",
+    "inQuote": "In uw offerte",
+    "details": "Details",
+    "origin": "Herkomst",
+    "availability": "Beschikbaarheid",
+    "onRequest": "Op aanvraag",
+    "certification": "Certificering",
+    "storage": "Bewaring",
+    "highlights": "Kenmerken",
+    "season": "Exportseizoen",
+    "inSeason": "In het seizoen",
+    "related": "Misschien ook interessant",
+    "seeRange": "Bekijk het assortiment",
+    "filterAll": "Alles",
+    "count": {
+      "one": "product",
+      "other": "producten"
+    },
+    "months": [
+      "J",
+      "F",
+      "M",
+      "A",
+      "M",
+      "J",
+      "J",
+      "A",
+      "S",
+      "O",
+      "N",
+      "D"
+    ],
+    "monthNames": [
+      "januari",
+      "februari",
+      "maart",
+      "april",
+      "mei",
+      "juni",
+      "juli",
+      "augustus",
+      "september",
+      "oktober",
+      "november",
+      "december"
+    ],
+    "askTitle": "Een prijs of specificatie nodig?",
+    "askText": "Voeg dit product toe aan uw offerteaanvraag of neem direct contact op met ons team.",
+    "seoTitle": "{name} uit Marokko"
+  },
+  "fresh": {
+    "title": "Verse producten",
+    "lead": "Groente en fruit uit Marokko en het Middellandse Zeegebied, op de juiste rijpheid geoogst, verpakt voor lang transport en gekoeld verzonden."
+  },
+  "frozen": {
+    "title": "Diepvriesfruit (IQF)",
+    "lead": "Marokkaanse bessen, direct na de oogst individueel snelbevroren. Wij beheren de keten van perceelkeuze tot logistiek op −18 °C, volgens uw B2B-specificatie.",
+    "iqfTitle": "Waarom IQF",
+    "iqfPoints": [
+      {
+        "title": "Bevroren bij de oogst",
+        "text": "Het fruit wordt binnen enkele uren na het plukken bevroren: kleur en smaak blijven behouden."
+      },
+      {
+        "title": "Los en doseerbaar",
+        "text": "Elke bes wordt apart bevroren, zodat u per gram kunt doseren."
+      },
+      {
+        "title": "Het hele jaar",
+        "text": "Een seizoensoogst wordt een stabiele aanvoer voor uw productieplanning."
+      }
+    ]
+  },
+  "why": {
+    "title": "Waarom producten uit Marokko",
+    "points": [
+      {
+        "title": "Klimaat",
+        "text": "Door de Atlas beschutte dalen, Atlantische bries en bijna het hele jaar zon."
+      },
+      {
+        "title": "Timing",
+        "text": "De oogst begint vroeg, wanneer de Europese velden nog leeg zijn."
+      },
+      {
+        "title": "Nabijheid",
+        "text": "Een korte overtocht naar Europa: versere producten en langere houdbaarheid bij aankomst."
+      }
+    ]
+  },
+  "about": {
+    "title": "Welkom bij Euravia",
+    "lead": "Uw betrouwbare toegang tot het beste verse en diepvriesfruit uit het hart van het Middellandse Zeegebied.",
+    "mission": [
+      "Euravia is opgericht vanuit een passie voor landbouwkwaliteit en betrouwbare logistiek. Wij zijn gespecialiseerd in het selecteren, verpakken en leveren van premium producten, rechtstreeks uit de vruchtbaarste regio's van Marokko, Spanje en het Middellandse Zeegebied.",
+      "Door de brug te slaan tussen zonovergoten kustbedrijven en wereldwijde markten zorgen wij dat onze internationale klanten groente en fruit van de hoogste kwaliteit ontvangen, precies wanneer ze die nodig hebben."
+    ],
+    "footprintTitle": "Waar wij actief zijn",
+    "morocco": {
+      "title": "Marokko",
+      "text": "Optimale teeltomstandigheden en nabijheid van Europa. Wij kopen uitzonderlijke citrus, verse bessen, groenten en steenfruit in, verpakt op de oogstdag."
+    },
+    "mediterranean": {
+      "title": "Spanje & Middellandse Zee",
+      "text": "Geavanceerde landbouwinfrastructuur voor een stabiele aanvoer het hele jaar van premium watermeloenen, druiven, avocado's en seizoensproducten."
+    },
+    "promiseTitle": "Vers of diepvries, dezelfde belofte",
+    "promiseText": "Of u nu verse producten nodig heeft die op hun rijpst zijn geplukt, of individueel snelbevroren (IQF) fruit dat voedingswaarde en smaak behoudt: Euravia staat voor kwaliteit, strenge voedselveiligheidsnormen en vlekkeloze logistiek.",
+    "officesTitle": "Onze kantoren"
+  },
+  "blog": {
+    "title": "Blog",
+    "lead": "Seizoenen, inkoop en de koelketen: nieuws uit het veld voor inkopers van groente en fruit.",
+    "readMore": "Lees het artikel",
+    "related": "Genoemde producten",
+    "back": "Alle artikelen"
+  },
+  "offices": {
+    "nl": {
+      "name": "Nederland",
+      "role": "Verkoop en logistiek Europa"
+    },
+    "ma": {
+      "name": "Marokko",
+      "role": "Inkoop en verpakking aan de bron"
+    },
+    "map": "Openen in kaarten"
+  },
+  "contact": {
+    "title": "Contact",
+    "lead": "Een vraag over een product, een seizoen of een levering? Onze teams in Utrecht en Casablanca helpen u graag.",
+    "formTitle": "Stuur ons een bericht",
+    "subject": "Onderwerp",
+    "subjects": [
+      "Verse producten",
+      "Diepvriesfruit (IQF)",
+      "Logistiek en levering",
+      "Leverancier worden",
+      "Overig"
+    ],
+    "firstName": "Voornaam",
+    "lastName": "Achternaam",
+    "company": "Bedrijf",
+    "email": "E-mail",
+    "phone": "Telefoon",
+    "country": "Land",
+    "message": "Bericht",
+    "required": "Verplichte velden",
+    "submit": "Bericht versturen",
+    "sending": "Versturen…",
+    "success": "Bedankt, uw bericht is verstuurd. Wij antwoorden binnen één werkdag.",
+    "error": "Uw bericht kon niet worden verstuurd. Mail ons rechtstreeks op",
+    "orWhatsapp": "of via WhatsApp",
+    "consent": "Wij gebruiken uw gegevens alleen om uw vraag te beantwoorden. Zie ons privacybeleid.",
+    "whatsapp": "WhatsApp",
+    "emailUs": "Mail ons"
+  },
+  "quote": {
+    "title": "Offerteaanvraag",
+    "intro": "Verzamel producten terwijl u rondkijkt, geef uw volumes op en stuur ons één aanvraag. Wij antwoorden met beschikbaarheid en prijzen.",
+    "basket": "Uw selectie",
+    "empty": "Uw offerteaanvraag is leeg.",
+    "emptyCta": "Bekijk ons assortiment",
+    "remove": "Verwijderen",
+    "clear": "Alles wissen",
+    "quantity": "Hoeveelheid",
+    "unit": "Eenheid",
+    "units": {
+      "kg": "kg",
+      "pallets": "pallets",
+      "containers": "containers"
+    },
+    "items": "producten geselecteerd",
+    "formTitle": "Uw gegevens",
+    "firstName": "Voornaam",
+    "lastName": "Achternaam",
+    "company": "Bedrijf",
+    "email": "E-mail",
+    "phone": "Telefoon",
+    "country": "Land",
+    "destination": "Land van levering",
+    "period": "Gewenste periode",
+    "periodHint": "bijv. wekelijks vanaf november, of één zending in maart",
+    "message": "Bericht",
+    "messageHint": "Verpakking, maat, certificering, Incoterm…",
+    "required": "Verplichte velden",
+    "submit": "Offerteaanvraag versturen",
+    "sending": "Versturen…",
+    "success": "Bedankt, uw offerteaanvraag is verstuurd. Wij komen bij u terug met beschikbaarheid en prijzen.",
+    "error": "Uw aanvraag kon niet worden verstuurd. Mail ons rechtstreeks op",
+    "whatsappSend": "Versturen via WhatsApp",
+    "whatsappHint": "Opent WhatsApp met uw selectie en gegevens, klaar om te versturen.",
+    "whatsappGreeting": "Hallo Euravia, ik wil graag een offerte voor:",
+    "destinationPick": "Kies een land",
+    "destinationOther": "Ander land (vermeld het in uw bericht)",
+    "destinations": [
+      "Spanje",
+      "Frankrijk",
+      "Nederland",
+      "Duitsland",
+      "Denemarken",
+      "Zweden",
+      "Noorwegen"
+    ]
+  },
+  "privacy": {
+    "title": "Privacybeleid",
+    "lead": "Hoe Euravia omgaat met de persoonsgegevens die u via deze website verstuurt.",
+    "sections": [
+      {
+        "h": "Wie wij zijn",
+        "p": "Euravia, met kantoren aan de Mississippidreef 95, 3565 CE Utrecht en in Casablanca (Marokko), is verantwoordelijk voor de hier beschreven verwerkingen. Contact: info@euraviafoods.com."
+      },
+      {
+        "h": "Wat wij verzamelen",
+        "p": "Alleen wat u invult in het contact- en offerteformulier: naam, bedrijf, e-mailadres, telefoonnummer, land, de geselecteerde producten en uw bericht."
+      },
+      {
+        "h": "Waarom",
+        "p": "Om uw vraag te beantwoorden en, als u klant wordt, offertes en bestellingen voor te bereiden en op te volgen. De grondslag is uw verzoek (precontractuele maatregelen) en ons gerechtvaardigd belang om zakelijke vragen te beantwoorden."
+      },
+      {
+        "h": "Bewaartermijn",
+        "p": "Aanvragen zonder vervolg worden na 24 maanden verwijderd. Klantgegevens bewaren wij zolang de fiscale en handelswetgeving dat vereist."
+      },
+      {
+        "h": "Delen",
+        "p": "Wij verkopen uw gegevens niet. Formulierberichten lopen via onze e-mailprovider. Logistieke partners ontvangen alleen wat nodig is voor de levering."
+      },
+      {
+        "h": "Cookies",
+        "p": "Deze website plaatst geen trackingcookies. Uw offerteselectie en taalkeuze worden in uw eigen browser opgeslagen (local storage) en pas naar ons verstuurd wanneer u een formulier verzendt."
+      },
+      {
+        "h": "Uw rechten",
+        "p": "U kunt inzage, correctie of verwijdering van uw gegevens vragen, of bezwaar maken tegen het gebruik ervan, via info@euraviafoods.com. U kunt ook een klacht indienen bij de Autoriteit Persoonsgegevens."
+      }
+    ]
+  },
+  "footer": {
+    "navTitle": "Navigatie",
+    "productsTitle": "Ons assortiment",
+    "contactTitle": "Contact",
+    "rights": "Alle rechten voorbehouden.",
+    "privacy": "Privacybeleid",
+    "backToTop": "Naar boven"
+  }
+}

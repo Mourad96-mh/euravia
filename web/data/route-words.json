@@ -1,0 +1,11 @@
+{
+  "fresh": { "en": "fresh", "fr": "frais", "nl": "vers" },
+  "vegetables": { "en": "vegetables", "fr": "legumes", "nl": "groenten" },
+  "fruits": { "en": "fruits", "fr": "fruits", "nl": "fruit" },
+  "frozen": { "en": "frozen", "fr": "surgeles", "nl": "diepvries" },
+  "about": { "en": "euravia", "fr": "euravia", "nl": "euravia" },
+  "blog": { "en": "blog", "fr": "blog", "nl": "blog" },
+  "contact": { "en": "contact", "fr": "contact", "nl": "contact" },
+  "quote": { "en": "quote", "fr": "devis", "nl": "offerte" },
+  "privacy": { "en": "privacy", "fr": "confidentialite", "nl": "privacy" }
+}

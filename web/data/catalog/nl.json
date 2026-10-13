@@ -1,0 +1,208 @@
+{
+  "tomatoes": {
+    "name": "Tomaten",
+    "tagline": "Natuurlijk zoet, stevig en lang houdbaar.",
+    "intro": "Geteeld onder optimale klimaatomstandigheden bieden onze Marokkaanse tomaten de juiste balans tussen natuurlijke zoetheid, stevige structuur en een lange houdbaarheid.",
+    "body": [
+      "Dankzij de zachte winters en de vele zonuren in Marokko leveren telers tomaten wanneer de Europese productie laag is. We selecteren op uniforme maat en kleur en verpakken zo dat de vrucht stevig blijft tot in uw distributiecentrum."
+    ],
+    "highlights": ["Evenwichtige natuurlijke zoetheid", "Stevig, goed transporteerbaar", "Lange houdbaarheid", "Uniforme maat en kleur"],
+    "origin": "Marokko"
+  },
+  "cherry-tomatoes": {
+    "name": "Cherrytomaten",
+    "tagline": "Constante maat, egale kleur en hoge Brix.",
+    "intro": "Rechtstreeks afkomstig uit hoogtechnologische kassen in de beste teeltgebieden van Marokko, waaronder Souss-Massa.",
+    "body": [
+      "Onze cherrytomaten hebben een uitzonderlijk constante maat, een egale kleur en een hoge Brix-waarde: het betrouwbare, zoete premiumprofiel waar consumenten om vragen."
+    ],
+    "highlights": ["In kassen geteeld in Souss-Massa", "Uitzonderlijk constante maat", "Egale kleur", "Hoge Brix, zoete premiumsmaak"],
+    "origin": "Marokko · Souss-Massa"
+  },
+  "kapia-pepper": {
+    "name": "Kapia-paprika's",
+    "tagline": "Zoete, niet-pittige puntpaprika's voor de grill en salades.",
+    "intro": "Geef uw versafdeling een upgrade met premium Kapia-paprika's uit Marokko.",
+    "body": [
+      "Met hun kenmerkende kegelvorm en uitzonderlijk zoete, niet-pittige vruchtvlees zijn deze puntpaprika's een vaste waarde om te grillen, te roosteren of rauw in salades te snijden.",
+      "Geteeld door ervaren Marokkaanse telers profiteren ze van een ideaal klimaat dat zorgt voor een gelijkmatige kleur, een stevige structuur en een lange houdbaarheid."
+    ],
+    "highlights": ["Kenmerkende kegelvorm", "Uitzonderlijk zoet, niet pittig", "Ideaal voor grill, oven en salade", "Gelijkmatige kleur, lang houdbaar"],
+    "origin": "Marokko"
+  },
+  "california-pepper": {
+    "name": "Blokpaprika's (California)",
+    "tagline": "Zongerijpte rode, groene en gele blokpaprika's.",
+    "intro": "Ontdek de volle smaak van onze California Wonder-paprika's, rechtstreeks van de vruchtbare, zonovergoten velden in de belangrijkste landbouwregio's van Marokko, zoals Souss-Massa.",
+    "body": [
+      "Bekend om hun dikke, knapperige wand en symmetrische blokvorm worden onze rode, groene en gele paprika's zorgvuldig geoogst, gewassen en gesorteerd volgens strenge internationale normen."
+    ],
+    "highlights": ["Rood, groen en geel", "Dikke, knapperige wand", "Symmetrische blokvorm", "Geoogst, gewassen en gesorteerd volgens internationale normen"],
+    "origin": "Marokko · Souss-Massa"
+  },
+  "chili-peppers": {
+    "name": "Chilipepers",
+    "tagline": "Van mild en kleurrijk tot vurig heet, het hele jaar door.",
+    "intro": "Speel in op de wereldwijde vraag naar pittige smaken met verse chilipepers rechtstreeks uit Marokko.",
+    "body": [
+      "Zongerijpt en variërend van een milde, kleurrijke kick tot intens hete, vurige profielen: voor sausproducenten, delicatessenzaken en avontuurlijke consumenten.",
+      "Dankzij een korte, geïntegreerde handelsroute naar Europa krijgt u topversheid, een sterke uitstraling en een stabiele aanvoer het hele jaar door."
+    ],
+    "highlights": ["Van mild tot zeer heet", "Voor sausmakers, retail en foodservice", "Korte, geïntegreerde route naar Europa", "Stabiele aanvoer het hele jaar"],
+    "origin": "Marokko",
+    "availability": "Het hele jaar"
+  },
+  "eggplant": {
+    "name": "Aubergines",
+    "tagline": "Glanzend, uniform en stevig, van november tot juni.",
+    "intro": "Profiteer van het ideale teeltklimaat van Marokko met onze premium selectie verse aubergines.",
+    "body": [
+      "Geteeld in moderne kassen, vooral in de productieve regio Souss-Massa, hebben onze aubergines een diepe glans, een uniforme maat en stevig, compact vruchtvlees met een uitstekende houdbaarheid.",
+      "Dankzij de vroege Marokkaanse oogst bieden we een lang exportseizoen van november tot en met juni. Elke zending voldoet aan internationale kwaliteitsnormen, met volledige traceerbaarheid, GlobalG.A.P.-certificering en zorgvuldige temperatuurbeheersing (boven 10 °C) om de versheid van veld tot levering te bewaren."
+    ],
+    "highlights": ["Diepe glans, uniforme maat", "Stevig, compact vruchtvlees", "GlobalG.A.P.-gecertificeerd, volledig traceerbaar", "Koelketen boven 10 °C"],
+    "origin": "Marokko · Souss-Massa",
+    "availability": "November – juni",
+    "certification": "GlobalG.A.P.",
+    "storage": "Boven 10 °C"
+  },
+  "zucchini": {
+    "name": "Courgettes",
+    "tagline": "Knapperig, duurzaam geteeld en betrouwbaar geleverd.",
+    "intro": "Versheid, kwaliteit en een betrouwbare aanvoer: de beste duurzaam geteelde courgettes, rechtstreeks uit de vruchtbare landbouwregio's van Marokko.",
+    "body": [
+      "Wij slaan de brug tussen toegewijde Marokkaanse telers en internationale markten en leveren knapperige producten van hoge kwaliteit tot aan uw deur."
+    ],
+    "highlights": ["Duurzaam geteeld", "Knapperig, premiumkwaliteit", "Rechtstreeks van Marokkaanse telers", "Geleverd tot aan uw locatie"],
+    "origin": "Marokko"
+  },
+  "green-beans": {
+    "name": "Sperziebonen",
+    "tagline": "Slank, draadloos en heldergroen.",
+    "intro": "Marokkaanse sperziebonen staan bekend om hun fijne knapperigheid, slanke vorm, heldergroene kleur en draadloze structuur.",
+    "body": [
+      "Met de hand geplukt en gesorteerd, verpakt om hun knapperigheid en kleur te behouden tot in het schap."
+    ],
+    "highlights": ["Fijne knapperigheid", "Slanke vorm", "Heldergroene kleur", "Draadloos"],
+    "origin": "Marokko"
+  },
+  "avocado": {
+    "name": "Avocado's",
+    "tagline": "Hoog oliegehalte, romige textuur en volle smaak.",
+    "intro": "Het Marokkaanse microklimaat, waar warme kustdagen en koele Atlantische nachten elkaar ontmoeten, biedt ideale omstandigheden voor avocado's van wereldklasse.",
+    "body": [
+      "Het resultaat: vruchten met een uitzonderlijk oliegehalte, een romige textuur en een volle smaak, gesorteerd en verpakt voor retail- en groothandelsprogramma's."
+    ],
+    "highlights": ["Uitzonderlijk oliegehalte", "Romige textuur", "Volle smaak", "Geteeld aan de Atlantische kust"],
+    "origin": "Marokko · Atlantische kust"
+  },
+  "citrus": {
+    "name": "Citrusvruchten",
+    "tagline": "Zoet, sappig en met een schil van topkwaliteit.",
+    "intro": "Marokko is wereldwijd vermaard om zijn citrusvruchten.",
+    "body": [
+      "Het landschap, beschut door het Atlasgebergte en gevoed door Atlantische en mediterrane bries, schept de ideale omgeving voor uitzonderlijk zoete, sappige vruchten met een mooie schil."
+    ],
+    "highlights": ["Uitzonderlijk zoet", "Sappige vruchten", "Schil van topkwaliteit", "Boomgaarden beschut door de Atlas"],
+    "origin": "Marokko"
+  },
+  "strawberries": {
+    "name": "Aardbeien",
+    "tagline": "Intens aroma, stevig vruchtvlees, vroeg in het seizoen.",
+    "intro": "Onze aardbeien rijpen onder de Marokkaanse zon en ontwikkelen een intens aroma, een evenwichtige zoetheid en een stevige structuur die zorgt voor een uitstekende houdbaarheid.",
+    "body": [
+      "Dankzij het gunstige klimaat begint de hoofdoogst vroeg in het seizoen, zodat we premium aardbeien kunnen leveren aan Europese en wereldwijde markten wanneer de lokale productie laag is."
+    ],
+    "highlights": ["Intens aroma", "Evenwichtige zoetheid", "Stevig, uitstekend houdbaar", "Vroeg beschikbaar voor Europa"],
+    "origin": "Marokko",
+    "availability": "Vroeg in het seizoen"
+  },
+  "raspberries": {
+    "name": "Frambozen",
+    "tagline": "Stevige bessen die aankomen als vers geplukt.",
+    "intro": "Wij selecteren frambozenrassen die op topkwaliteit zijn veredeld.",
+    "body": [
+      "Onze frambozen hebben een stevige structuur die kneuzingen weerstaat, zodat ze in uw distributiecentra aankomen alsof ze net geplukt zijn."
+    ],
+    "highlights": ["Geselecteerde rassen", "Stevig, weinig kneusgevoelig", "Komen aan als vers geplukt"],
+    "origin": "Marokko"
+  },
+  "blueberries": {
+    "name": "Blauwe bessen",
+    "tagline": "Jumbomaat, stevige bite en schapklaar.",
+    "intro": "Geteeld in ideale kustmicroklimaten en het hele jaar door in de zon, staan Marokkaanse blauwe bessen bekend om hun jumbomaat, stevige bite en rijke antioxidantenprofiel.",
+    "body": [
+      "Wij leveren premium, schapklare bessen rechtstreeks aan internationale retailers en distributeurs."
+    ],
+    "highlights": ["Jumbomaat", "Stevige bite", "Rijk aan antioxidanten", "Schapklaar voor retail"],
+    "origin": "Marokko · kustregio's"
+  },
+  "watermelon": {
+    "name": "Watermeloenen",
+    "tagline": "Hoge Brix, knapperig en verfrissend, in grote volumes.",
+    "intro": "Geteeld in de zonnigste regio's van Marokko staan onze watermeloenen bekend om hun hoge Brix-waarde (suiker), knapperige textuur en verfrissende smaak.",
+    "body": [
+      "Wij regelen alles, van de oogst op het veld tot de internationale verzending, voor grootschalige leveringen aan retail, groothandel en catering wereldwijd."
+    ],
+    "highlights": ["Hoge Brix-waarde (suiker)", "Knapperige textuur", "Van veld tot verzending in eigen beheer", "Grote volumes"],
+    "origin": "Marokko · Spanje"
+  },
+  "melon": {
+    "name": "Meloenen",
+    "tagline": "Zoete, geurige meloenen van zonnige mediterrane velden.",
+    "intro": "Zoete, geurige meloenen uit de zonnigste teeltgebieden van Marokko en het Middellandse Zeegebied.",
+    "body": [
+      "Op de juiste rijpheid geoogst en verpakt om aroma en zoetheid te behouden, leveren wij onze meloenen aan retail, groothandel en catering. Vraag ons naar de actuele rassen en maten."
+    ],
+    "highlights": ["Op de juiste rijpheid geoogst", "Zoet en geurig", "Voor retail, groothandel en catering"],
+    "origin": "Marokko · Middellandse Zee"
+  },
+  "iqf-strawberries": {
+    "name": "IQF-aardbeien",
+    "tagline": "Uit een van 's werelds vijf grootste exporteurs van diepvriesaardbeien.",
+    "intro": "Marokko behoort tot de vijf grootste exporteurs van diepvriesaardbeien ter wereld, dankzij een ideaal klimaat en vruchtbare grond.",
+    "body": [
+      "Bij Euravia beheren we de hele keten. Door toe te zien op perceelkeuze, oogst, verwerking en koelketenlogistiek zorgen we dat ons fruit precies aan uw B2B-specificaties voldoet."
+    ],
+    "highlights": ["Individueel snelbevroren (IQF)", "Van perceel tot koelketen in eigen beheer", "Volgens uw B2B-specificatie", "Het hele jaar beschikbaar"],
+    "origin": "Marokko",
+    "availability": "Het hele jaar",
+    "storage": "−18 °C"
+  },
+  "iqf-blackberries": {
+    "name": "IQF-bramen",
+    "tagline": "Vol, zoet en diep van kleur, het hele jaar door.",
+    "intro": "Het Marokkaanse klimaat levert uitzonderlijk volle, zoete en diepgekleurde bramen op.",
+    "body": [
+      "Door direct na de oogst IQF-technologie toe te passen bieden we internationale inkopers het hele jaar een betrouwbare aanvoer van premium fruit dat de kwaliteit van vers geplukt benadert."
+    ],
+    "highlights": ["Vol, zoet en diep van kleur", "Direct na de oogst bevroren", "Kwaliteit dicht bij vers", "Betrouwbare aanvoer het hele jaar"],
+    "origin": "Marokko",
+    "availability": "Het hele jaar",
+    "storage": "−18 °C"
+  },
+  "iqf-raspberries": {
+    "name": "IQF-frambozen",
+    "tagline": "Geurige robijnrode bessen, direct na de oogst bevroren.",
+    "intro": "Het Marokkaanse klimaat combineert zon en milde temperaturen tot uitzonderlijk geurige, zoete en stevige frambozen.",
+    "body": [
+      "Direct na de oogst snelbevroren behouden ze hun delicate smaak en intens robijnrode kleur: een premiumproduct, ongeacht het seizoen."
+    ],
+    "highlights": ["Geurig en zoet", "Stevige bessen", "Intens robijnrood", "Premiumkwaliteit in elk seizoen"],
+    "origin": "Marokko",
+    "availability": "Het hele jaar",
+    "storage": "−18 °C"
+  },
+  "iqf-blueberries": {
+    "name": "IQF-blauwe bessen",
+    "tagline": "Zoetzuur, diepblauw en van nature stevig.",
+    "intro": "Marokko is uitgegroeid tot een toonaangevende speler in de teelt van blauwe bessen.",
+    "body": [
+      "In de noordelijke en kustregio's, met zachte winters en rijke grond, ontwikkelen de bessen een uitstekende zoetzure balans, een intens diepblauwe kleur en een natuurlijke stevigheid. Direct na de oogst bevroren bieden ze internationale inkopers premium fruit met een stabiele aanvoer op lange termijn."
+    ],
+    "highlights": ["Zoetzure balans", "Intens diepblauw", "Van nature stevig", "Stabiele aanvoer op lange termijn"],
+    "origin": "Marokko · noorden en kust",
+    "availability": "Het hele jaar",
+    "storage": "−18 °C"
+  }
+}

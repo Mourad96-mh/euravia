@@ -1,0 +1,359 @@
+{
+  "site": {
+    "name": "Euravia",
+    "tagline": "Fruits et légumes frais et surgelés du Maroc",
+    "description": "Euravia sélectionne, conditionne et fournit des fruits et légumes frais et surgelés IQF du Maroc et de Méditerranée aux acheteurs de toute l'Europe. Bureaux à Utrecht et Casablanca."
+  },
+  "a11y": {
+    "skipToContent": "Aller au contenu",
+    "mainNav": "Navigation principale",
+    "breadcrumb": "Fil d'Ariane"
+  },
+  "nav": {
+    "home": "Accueil",
+    "fresh": "Frais",
+    "frozen": "Surgelés",
+    "about": "Euravia",
+    "blog": "Blog",
+    "contact": "Contact",
+    "quote": "Demande de devis",
+    "quoteShort": "Devis",
+    "allFresh": "Tous les produits frais",
+    "allFrozen": "Tous les fruits surgelés",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "language": "Langue"
+  },
+  "categories": {
+    "fresh": {
+      "name": "Produits frais",
+      "short": "Légumes et fruits conditionnés le jour de la récolte",
+      "blurb": "Légumes et fruits du Maroc mûris au soleil, récoltés au bon moment et conditionnés pour arriver en parfait état dans votre centre de distribution."
+    },
+    "vegetables": {
+      "name": "Légumes frais",
+      "short": "Tomates, poivrons, aubergines, haricots…",
+      "blurb": "Tomates, poivrons, aubergines, courgettes et haricots verts des régions de serres du Maroc : calibre régulier, couleur uniforme et longue conservation."
+    },
+    "fruits": {
+      "name": "Fruits frais",
+      "short": "Avocats, agrumes, fruits rouges, melons…",
+      "blurb": "Avocats, agrumes, fruits rouges et melons cultivés entre l'Atlas et l'Atlantique, avec la douceur, l'arôme et la fermeté qu'attendent les consommateurs européens."
+    },
+    "frozen": {
+      "name": "Fruits surgelés (IQF)",
+      "short": "Fraises, framboises, mûres, myrtilles",
+      "blurb": "Fruits rouges surgelés individuellement juste après la récolte : couleur et saveur du fruit frais, grains libres, disponibles toute l'année."
+    }
+  },
+  "home": {
+    "heroTitle": "Fruits et légumes frais et surgelés, des champs marocains aux rayons européens",
+    "heroText": "Légumes, fruits et fruits rouges IQF haut de gamme, sélectionnés à l'origine et livrés sous chaîne du froid maîtrisée.",
+    "heroPrimary": "Découvrir nos produits",
+    "heroSecondary": "Demander un devis",
+    "eyebrow": "Euravia",
+    "title": "Votre porte d'entrée vers les meilleurs fruits et légumes frais et surgelés de Méditerranée",
+    "lead": "Nous sélectionnons, conditionnons et fournissons des fruits et légumes haut de gamme directement depuis les régions les plus fertiles du Maroc, d'Espagne et de tout le bassin méditerranéen.",
+    "paragraphs": [
+      "Née d'une passion pour l'excellence agricole et la fiabilité logistique, Euravia fait le lien entre les exploitations côtières ensoleillées et les marchés mondiaux.",
+      "Que vous ayez besoin de produits frais cueillis à pleine maturité ou de fruits surgelés individuellement (IQF) qui conservent leur valeur nutritionnelle et leur saveur, nos clients internationaux reçoivent le meilleur niveau de qualité, exactement quand ils en ont besoin."
+    ],
+    "pillarsTitle": "Cinq raisons de s'approvisionner chez Euravia",
+    "pillars": [
+      {
+        "title": "Une origine ensoleillée",
+        "text": "Des régions fertiles comme le Souss-Massa et la côte atlantique, au soleil presque toute l'année."
+      },
+      {
+        "title": "La précocité",
+        "text": "Le Maroc récolte quand la production européenne est faible : vos rayons restent pleins."
+      },
+      {
+        "title": "Chaîne du froid & IQF",
+        "text": "Température maîtrisée du champ à la livraison, fruits rouges surgelés dès la récolte."
+      },
+      {
+        "title": "Traçabilité & normes",
+        "text": "Traçabilité complète et normes de qualité internationales, dont la certification GlobalG.A.P."
+      },
+      {
+        "title": "Deux bureaux, une seule chaîne",
+        "text": "Casablanca à la source, Utrecht au plus près de nos clients européens."
+      }
+    ],
+    "rangesTitle": "Nos gammes",
+    "featuredTitle": "Les plus demandés",
+    "featuredLead": "Ajoutez des produits à votre demande de devis et indiquez vos volumes. Nous vous répondons avec les disponibilités et un prix.",
+    "officesTitle": "Du champ marocain jusqu'à votre porte en Europe",
+    "officesText": "Notre équipe de Casablanca travaille avec les producteurs et les stations de conditionnement à l'origine. Notre bureau d'Utrecht suit les clients européens, les documents et la livraison.",
+    "facts": [
+      {
+        "value": "19",
+        "label": "Produits dans notre gamme"
+      },
+      {
+        "value": "2",
+        "label": "Bureaux : Utrecht et Casablanca"
+      },
+      {
+        "value": "3",
+        "label": "Zones d'origine : Maroc, Espagne, Méditerranée"
+      },
+      {
+        "value": "−18 °C",
+        "label": "Chaîne du froid IQF pour les surgelés"
+      }
+    ],
+    "quoteTitle": "Vous cherchez un fournisseur fiable ?",
+    "quoteText": "Indiquez-nous les produits, les volumes et la destination. Nous revenons vers vous avec les disponibilités et un devis.",
+    "quoteCta": "Demander un devis"
+  },
+  "catalog": {
+    "addToQuote": "Ajouter au devis",
+    "inQuote": "Dans votre devis",
+    "details": "Détails",
+    "origin": "Origine",
+    "availability": "Disponibilité",
+    "onRequest": "Sur demande",
+    "certification": "Certification",
+    "storage": "Conservation",
+    "highlights": "Points forts",
+    "season": "Saison d'export",
+    "inSeason": "En saison",
+    "related": "Vous aimerez aussi",
+    "seeRange": "Voir la gamme",
+    "filterAll": "Tous",
+    "count": {
+      "one": "produit",
+      "other": "produits"
+    },
+    "months": [
+      "J",
+      "F",
+      "M",
+      "A",
+      "M",
+      "J",
+      "J",
+      "A",
+      "S",
+      "O",
+      "N",
+      "D"
+    ],
+    "monthNames": [
+      "janvier",
+      "février",
+      "mars",
+      "avril",
+      "mai",
+      "juin",
+      "juillet",
+      "août",
+      "septembre",
+      "octobre",
+      "novembre",
+      "décembre"
+    ],
+    "askTitle": "Besoin d'un prix ou d'une fiche technique ?",
+    "askText": "Ajoutez ce produit à votre demande de devis, ou contactez directement notre équipe.",
+    "seoTitle": "{name} du Maroc"
+  },
+  "fresh": {
+    "title": "Produits frais",
+    "lead": "Légumes et fruits du Maroc et de Méditerranée, récoltés à bonne maturité, conditionnés pour le transport longue distance et expédiés sous température maîtrisée."
+  },
+  "frozen": {
+    "title": "Fruits surgelés (IQF)",
+    "lead": "Des fruits rouges du Maroc surgelés individuellement juste après la récolte. Nous gérons toute la chaîne, de la sélection des parcelles à la logistique à −18 °C, selon votre cahier des charges.",
+    "iqfTitle": "Pourquoi l'IQF",
+    "iqfPoints": [
+      {
+        "title": "Surgelés à la récolte",
+        "text": "Les fruits sont surgelés quelques heures après la cueillette : couleur et saveur sont préservées."
+      },
+      {
+        "title": "Grains libres",
+        "text": "Chaque fruit est surgelé séparément : vous dosez au gramme près."
+      },
+      {
+        "title": "Toute l'année",
+        "text": "Une récolte saisonnière devient un approvisionnement stable pour votre production."
+      }
+    ]
+  },
+  "why": {
+    "title": "Pourquoi des produits du Maroc",
+    "points": [
+      {
+        "title": "Le climat",
+        "text": "Des vallées abritées par l'Atlas, les brises atlantiques et le soleil presque toute l'année."
+      },
+      {
+        "title": "Le calendrier",
+        "text": "Les récoltes commencent tôt, quand les champs européens sont encore vides."
+      },
+      {
+        "title": "La proximité",
+        "text": "Une courte traversée vers l'Europe : des produits plus frais et une meilleure conservation à l'arrivée."
+      }
+    ]
+  },
+  "about": {
+    "title": "Bienvenue chez Euravia",
+    "lead": "Votre porte d'entrée vers les meilleurs fruits frais et surgelés, au cœur de la Méditerranée.",
+    "mission": [
+      "Euravia est née d'une passion pour l'excellence agricole et la fiabilité logistique. Nous sommes spécialisés dans la sélection, le conditionnement et la fourniture de produits haut de gamme, directement issus des régions les plus fertiles du Maroc, d'Espagne et du bassin méditerranéen.",
+      "En reliant les exploitations côtières ensoleillées aux marchés mondiaux, nous garantissons à nos clients internationaux des fruits et légumes du meilleur niveau, exactement quand ils en ont besoin."
+    ],
+    "footprintTitle": "Notre présence",
+    "morocco": {
+      "title": "Maroc",
+      "text": "Des conditions de culture optimales et la proximité de l'Europe. Nous sélectionnons des agrumes d'exception, des fruits rouges, des légumes et des fruits à noyau, conditionnés le jour de la récolte."
+    },
+    "mediterranean": {
+      "title": "Espagne & Méditerranée",
+      "text": "Des infrastructures agricoles avancées pour un approvisionnement stable, toute l'année, en pastèques, raisins, avocats et produits de saison haut de gamme."
+    },
+    "promiseTitle": "Frais ou surgelé, le même engagement",
+    "promiseText": "Que vous ayez besoin de produits frais cueillis à pleine maturité ou de fruits surgelés individuellement (IQF) qui préservent leur valeur nutritionnelle et leur saveur, Euravia s'engage sur la qualité, des normes de sécurité alimentaire rigoureuses et une logistique sans accroc.",
+    "officesTitle": "Nos bureaux"
+  },
+  "blog": {
+    "title": "Blog",
+    "lead": "Saisons, approvisionnement et chaîne du froid : des nouvelles du terrain pour les acheteurs de fruits et légumes.",
+    "readMore": "Lire l'article",
+    "related": "Produits cités",
+    "back": "Tous les articles"
+  },
+  "offices": {
+    "nl": {
+      "name": "Pays-Bas",
+      "role": "Ventes et logistique Europe"
+    },
+    "ma": {
+      "name": "Maroc",
+      "role": "Approvisionnement et conditionnement à l'origine"
+    },
+    "map": "Ouvrir dans le plan"
+  },
+  "contact": {
+    "title": "Contact",
+    "lead": "Une question sur un produit, une saison ou une livraison ? Nos équipes d'Utrecht et de Casablanca vous répondent.",
+    "formTitle": "Envoyez-nous un message",
+    "subject": "Objet",
+    "subjects": [
+      "Produits frais",
+      "Fruits surgelés (IQF)",
+      "Logistique et livraison",
+      "Devenir fournisseur",
+      "Autre"
+    ],
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "company": "Société",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "country": "Pays",
+    "message": "Message",
+    "required": "Champs obligatoires",
+    "submit": "Envoyer le message",
+    "sending": "Envoi…",
+    "success": "Merci, votre message a bien été envoyé. Nous vous répondons sous un jour ouvré.",
+    "error": "Votre message n'a pas pu être envoyé. Écrivez-nous directement à",
+    "orWhatsapp": "ou sur WhatsApp",
+    "consent": "Vos coordonnées servent uniquement à répondre à votre demande. Voir notre politique de confidentialité.",
+    "whatsapp": "WhatsApp",
+    "emailUs": "Nous écrire"
+  },
+  "quote": {
+    "title": "Demande de devis",
+    "intro": "Ajoutez des produits au fil de votre visite, indiquez vos volumes et envoyez-nous une seule demande. Nous vous répondons avec les disponibilités et les prix.",
+    "basket": "Votre sélection",
+    "empty": "Votre demande de devis est vide.",
+    "emptyCta": "Voir nos produits",
+    "remove": "Retirer",
+    "clear": "Tout effacer",
+    "quantity": "Quantité",
+    "unit": "Unité",
+    "units": {
+      "kg": "kg",
+      "pallets": "palettes",
+      "containers": "conteneurs"
+    },
+    "items": "produits sélectionnés",
+    "formTitle": "Vos coordonnées",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "company": "Société",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "country": "Pays",
+    "destination": "Pays de livraison",
+    "period": "Période souhaitée",
+    "periodHint": "ex. chaque semaine dès novembre, ou un envoi unique en mars",
+    "message": "Message",
+    "messageHint": "Conditionnement, calibre, certification, Incoterm…",
+    "required": "Champs obligatoires",
+    "submit": "Envoyer ma demande de devis",
+    "sending": "Envoi…",
+    "success": "Merci, votre demande de devis a bien été envoyée. Nous revenons vers vous avec les disponibilités et les prix.",
+    "error": "Votre demande n'a pas pu être envoyée. Écrivez-nous directement à",
+    "whatsappSend": "Envoyer sur WhatsApp",
+    "whatsappHint": "Ouvre WhatsApp avec votre sélection et vos coordonnées, prêtes à envoyer.",
+    "whatsappGreeting": "Bonjour Euravia, je souhaite un devis pour :",
+    "destinationPick": "Choisissez un pays",
+    "destinationOther": "Autre (précisez dans le message)",
+    "destinations": [
+      "Espagne",
+      "France",
+      "Pays-Bas",
+      "Allemagne",
+      "Danemark",
+      "Suède",
+      "Norvège"
+    ]
+  },
+  "privacy": {
+    "title": "Politique de confidentialité",
+    "lead": "Comment Euravia traite les données personnelles que vous nous transmettez via ce site.",
+    "sections": [
+      {
+        "h": "Qui sommes-nous",
+        "p": "Euravia, avec des bureaux au Mississippidreef 95, 3565 CE Utrecht (Pays-Bas) et à Casablanca (Maroc), est responsable des traitements décrits ici. Contact : info@euraviafoods.com."
+      },
+      {
+        "h": "Ce que nous collectons",
+        "p": "Uniquement ce que vous saisissez dans les formulaires de contact et de devis : nom, société, adresse e-mail, téléphone, pays, les produits sélectionnés et votre message."
+      },
+      {
+        "h": "Pourquoi",
+        "p": "Pour répondre à votre demande et, si vous devenez client, préparer et suivre devis et commandes. La base légale est votre demande (mesures précontractuelles) et notre intérêt légitime à répondre aux demandes professionnelles."
+      },
+      {
+        "h": "Durée de conservation",
+        "p": "Les demandes sans suite sont supprimées après 24 mois. Les données clients sont conservées le temps exigé par le droit fiscal et commercial."
+      },
+      {
+        "h": "Partage",
+        "p": "Nous ne vendons pas vos données. Les messages des formulaires transitent par notre fournisseur de messagerie. Les partenaires logistiques ne reçoivent que ce qui est nécessaire à la livraison."
+      },
+      {
+        "h": "Cookies",
+        "p": "Ce site ne dépose aucun cookie de suivi. Votre sélection de devis et votre choix de langue sont enregistrés dans votre propre navigateur (stockage local) et ne nous sont transmis qu'à l'envoi d'un formulaire."
+      },
+      {
+        "h": "Vos droits",
+        "p": "Vous pouvez demander l'accès, la rectification ou la suppression de vos données, ou vous opposer à leur usage, en écrivant à info@euraviafoods.com. Vous pouvez aussi saisir l'autorité néerlandaise de protection des données (Autoriteit Persoonsgegevens)."
+      }
+    ]
+  },
+  "footer": {
+    "navTitle": "Navigation",
+    "productsTitle": "Nos gammes",
+    "contactTitle": "Contact",
+    "rights": "Tous droits réservés.",
+    "privacy": "Politique de confidentialité",
+    "backToTop": "Haut de page"
+  }
+}

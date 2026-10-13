@@ -1,0 +1,136 @@
+.footer {
+  margin-top: clamp(3rem, 6vw, 6rem);
+  background: var(--footer);
+  color: rgb(255 255 255 / 0.78);
+  font-size: 0.94rem;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 1.4fr repeat(3, 1fr);
+  gap: clamp(1.5rem, 3vw, 3rem);
+  padding-block: clamp(2.5rem, 5vw, 4rem);
+}
+
+.brand {
+  max-width: 36ch;
+}
+
+.logo {
+  display: block;
+  width: auto;
+  height: 46px;
+  aspect-ratio: 208 / 48;
+  color: #fff;
+  --logo-vein: var(--footer);
+}
+
+.tagline {
+  margin-top: 1rem;
+  color: rgb(255 255 255 / 0.6);
+}
+
+.colTitle {
+  margin: 0 0 1rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list li {
+  margin-bottom: 0.5rem;
+}
+
+.list a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.address {
+  display: grid;
+  gap: 0.15rem;
+  margin-bottom: 1rem;
+  font-style: normal;
+  color: rgb(255 255 255 / 0.6);
+}
+
+.address a {
+  margin-top: 0.2rem;
+  color: rgb(255 255 255 / 0.78);
+  text-decoration: none;
+}
+
+.address a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.barLinks {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.address strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+.bar {
+  border-top: 1px solid rgb(255 255 255 / 0.12);
+  font-size: 0.84rem;
+}
+
+.barInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 1.1rem;
+}
+
+.barInner p {
+  margin: 0;
+}
+
+.toTop {
+  /* Padding, not height: the text box alone was 22px of target. */
+  display: inline-block;
+  padding-block: 0.55rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.toTop:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .top {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .top {
+    grid-template-columns: 1fr;
+  }
+
+  .barInner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

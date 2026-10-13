@@ -1,0 +1,852 @@
+/*
+ * Header, after moreco.ma (itself following casem.ma): utility bar + full-height main bar, logo left,
+ * hover dropdowns, quote button right. Over the home hero it is transparent and
+ * turns solid on scroll (their theme calls that a "phantom" header).
+ */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: background 0.25s var(--ease), box-shadow 0.25s var(--ease);
+}
+
+.isSolid {
+  background: var(--paper);
+  box-shadow: var(--shadow-1);
+}
+
+.isTransparent {
+  position: fixed;
+  inset-inline: 0;
+  background: linear-gradient(to bottom, rgb(0 0 0 / 0.42), rgb(0 0 0 / 0));
+  color: #fff;
+}
+
+/* ---------- utility bar ---------- */
+
+.topbar {
+  border-bottom: 1px solid var(--line);
+  font-size: var(--step--1);
+  transition: border-color 0.25s var(--ease);
+}
+
+.isTransparent .topbar {
+  border-bottom-color: rgb(255 255 255 / 0.22);
+}
+
+.topbarInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: var(--topbar-h);
+}
+
+.topLeft {
+  display: flex;
+  align-items: center;
+  /* Stretches so the phone link inside can still fill the bar's height. */
+  align-self: stretch;
+  gap: 1.25rem;
+}
+
+.topLink {
+  display: inline-flex;
+  align-items: center;
+  /* Fills the utility bar's height so the target is the bar, not the 22px text box. */
+  align-self: stretch;
+  gap: 0.45rem;
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.topCode {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  opacity: 0.7;
+}
+
+.topLink:hover {
+  color: var(--brand);
+}
+
+.isTransparent .topLink:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.topRight {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.langs {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.lang,
+.langActive {
+  display: inline-flex;
+  align-items: center;
+  /* WCAG 2.5.8 wants 24x24 of target; 0.72rem type was also below the 12px floor. */
+  min-height: 30px;
+  padding: 0.3rem 0.5rem;
+  border-radius: 3px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.62;
+}
+
+.lang:hover {
+  opacity: 1;
+  background: color-mix(in srgb, currentColor 10%, transparent);
+}
+
+.langActive {
+  opacity: 1;
+  background: color-mix(in srgb, currentColor 14%, transparent);
+}
+
+/* ---------- main bar ---------- */
+
+.mainInner {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.75rem, 2vw, 2rem);
+  min-height: var(--header-h);
+  transition: min-height 0.25s var(--ease);
+}
+
+.isScrolled .mainInner {
+  min-height: var(--header-h-scrolled);
+}
+
+.logo {
+  flex: 0 0 auto;
+  display: block;
+  line-height: 0;
+}
+
+.logoImg {
+  display: block;
+  width: auto;
+  height: clamp(38px, 4.4vw, 48px);
+  aspect-ratio: 208 / 48;
+  color: var(--brand);
+  --logo-vein: var(--paper);
+  transition: height 0.25s var(--ease), color 0.25s var(--ease);
+}
+
+.isScrolled .logoImg {
+  height: clamp(34px, 3.6vw, 40px);
+}
+
+/* Over the film the wordmark reads white; the sun keeps its orange. */
+.isTransparent .logoImg {
+  color: #fff;
+  --logo-vein: var(--brand-darker);
+}
+
+.nav {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navList {
+  display: flex;
+  align-items: stretch;
+  align-self: stretch;
+  gap: clamp(0.4rem, 1.4vw, 1.4rem);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Full-height items: the pointer never falls into a dead gap between label and panel. */
+.navItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.navLink {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.36rem;
+  padding: 0.5rem 0.2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.005em;
+  text-decoration: none;
+  white-space: nowrap;
+  color: inherit;
+  transition: color 0.18s var(--ease);
+}
+
+/* Indicator grows out of the centre and stays put on the section you are in. */
+.navLink::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.05rem;
+  height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.24s var(--ease);
+}
+
+.navItem:hover .navLink::after,
+.navLink:focus-visible::after,
+.navLink[aria-current='true']::after {
+  transform: scaleX(1);
+}
+
+.navLink svg {
+  transition: transform 0.2s var(--ease);
+}
+
+.navLink[aria-expanded='true'] svg {
+  transform: rotate(180deg);
+}
+
+.isSolid .navItem:hover .navLink,
+.isSolid .navLink[aria-current='true'] {
+  color: var(--brand-dark);
+}
+
+/* ---------- dropdown panels ---------- */
+
+/*
+ * The wrapper is the hover bridge: its top padding covers the gap under the header, so
+ * the pointer travelling from the label to the card never leaves the item.
+ */
+.panelWrap {
+  /* Centring and the entrance animation share one transform: composing the `translate`
+     property with `transform` left the open panel 8px low, which reopened the dead gap
+     the bridge exists to close. */
+  --shift-x: -50%;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  z-index: 30;
+  padding-top: 11px;
+  transform: translate(var(--shift-x), 8px);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 0.2s var(--ease),
+    transform 0.2s var(--ease),
+    visibility 0.2s;
+}
+
+/* The products panel is wide, so it hangs from the item's leading edge, not centred. */
+.panelWrapMega {
+  --shift-x: 0px;
+  left: auto;
+  inset-inline-start: -1.25rem;
+}
+
+.panelOpen {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translate(var(--shift-x), 0);
+}
+
+.panel,
+.mega {
+  position: relative;
+  padding: 0.4rem;
+  background: var(--paper);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow:
+    0 2px 4px rgb(16 22 28 / 0.04),
+    0 10px 24px -6px rgb(16 22 28 / 0.12),
+    0 30px 60px -24px rgb(16 22 28 / 0.26);
+}
+
+.panel {
+  min-width: 278px;
+}
+
+/* Caret, so the card reads as belonging to the item above it. */
+.panel::before,
+.mega::before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  width: 13px;
+  height: 13px;
+  background: var(--paper);
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+  border-radius: 3px 0 0 0;
+  transform: rotate(45deg);
+}
+
+.panel::before {
+  left: 50%;
+  margin-left: -6.5px;
+}
+
+.mega::before {
+  inset-inline-start: 2.6rem;
+}
+
+.panelList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.panelLink {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  padding: 0.66rem 0.8rem;
+  border-radius: 9px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--ink-2);
+  transition:
+    background 0.16s var(--ease),
+    color 0.16s var(--ease);
+}
+
+.panelLink::before {
+  content: '';
+  position: absolute;
+  inset-inline-start: 0.26rem;
+  top: 50%;
+  width: 3px;
+  height: 0;
+  border-radius: 2px;
+  background: var(--brand);
+  translate: 0 -50%;
+  transition: height 0.2s var(--ease);
+}
+
+.panelLink svg {
+  flex: 0 0 auto;
+  color: var(--brand);
+  opacity: 0;
+  translate: -6px 0;
+  transition:
+    opacity 0.16s var(--ease),
+    translate 0.16s var(--ease);
+}
+
+.panelLink:hover,
+.panelLink:focus-visible {
+  background: var(--paper-2);
+  color: var(--brand-darker);
+}
+
+.panelLink:hover::before,
+.panelLink:focus-visible::before {
+  height: 1.15rem;
+}
+
+.panelLink:hover svg,
+.panelLink:focus-visible svg {
+  opacity: 1;
+  translate: 0 0;
+}
+
+/* ---------- Fresh mega panel: one column per category ---------- */
+
+.mega {
+  width: min(560px, calc(100vw - 2 * var(--gutter)));
+  padding: 0.6rem;
+}
+
+.megaGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.25rem;
+}
+
+.megaCol {
+  padding: 0.35rem;
+  border-radius: 10px;
+}
+
+.megaHead {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.55rem 0.6rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--ink);
+  transition: background 0.16s var(--ease), color 0.16s var(--ease);
+}
+
+.megaHead svg {
+  margin-inline-start: auto;
+  color: var(--accent, var(--brand));
+  opacity: 0;
+  translate: -6px 0;
+  transition: opacity 0.16s var(--ease), translate 0.16s var(--ease);
+}
+
+.megaHead:hover,
+.megaHead:focus-visible {
+  background: color-mix(in srgb, var(--accent, var(--brand)) 9%, var(--paper-2));
+  color: color-mix(in srgb, var(--accent, var(--brand)) 80%, var(--ink));
+}
+
+.megaHead:hover svg,
+.megaHead:focus-visible svg {
+  opacity: 1;
+  translate: 0 0;
+}
+
+.megaDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  background: var(--accent, var(--brand));
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent, var(--brand)) 20%, transparent);
+}
+
+.megaList {
+  margin: 0.2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.megaLink {
+  display: block;
+  padding: 0.42rem 0.6rem 0.42rem 1.95rem;
+  border-radius: 7px;
+  font-size: 0.9rem;
+  color: var(--ink-2);
+  text-decoration: none;
+  transition: background 0.16s var(--ease), color 0.16s var(--ease);
+}
+
+.megaLink:hover,
+.megaLink:focus-visible {
+  background: var(--paper-2);
+  color: color-mix(in srgb, var(--accent, var(--brand)) 80%, var(--ink));
+}
+
+.megaFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.35rem;
+  padding: 0.72rem 0.8rem;
+  border-top: 1px solid var(--line);
+  border-radius: 0 0 10px 10px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--brand-dark);
+  transition: background 0.16s var(--ease);
+}
+
+.megaFooter:hover,
+.megaFooter:focus-visible {
+  background: var(--paper-2);
+}
+
+.megaFooter svg {
+  transition: translate 0.18s var(--ease);
+}
+
+.megaFooter:hover svg {
+  translate: 4px 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .panelWrap,
+  .panelLink,
+  .panelLink::before,
+  .panelLink svg,
+  .megaHead svg,
+  .megaLink,
+  .navLink::after,
+  .navLink svg {
+    transition-duration: 0.01ms;
+  }
+
+  .panelWrap {
+    transform: translate(var(--shift-x), 0);
+  }
+}
+
+/* ---------- quote button ---------- */
+
+.quote {
+  position: relative;
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.1rem;
+  border-radius: var(--radius);
+  background: var(--brand);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.1;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.18s var(--ease);
+}
+
+.quote:hover {
+  background: var(--brand-dark);
+}
+
+.isTransparent .quote {
+  background: rgb(255 255 255 / 0.14);
+  border: 1px solid rgb(255 255 255 / 0.65);
+  backdrop-filter: blur(4px);
+}
+
+.isTransparent .quote:hover {
+  background: #fff;
+  color: var(--ink);
+}
+
+.quoteLabelShort {
+  display: none;
+}
+
+.badge {
+  display: inline-grid;
+  place-items: center;
+  min-width: 1.35rem;
+  height: 1.35rem;
+  padding: 0 0.35rem;
+  border-radius: 999px;
+  background: var(--sun);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* ---------- burger + drawer ---------- */
+
+.burger {
+  display: none;
+  flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.burgerBars,
+.burgerBars::before,
+.burgerBars::after {
+  display: block;
+  width: 24px;
+  height: 2px;
+  margin-inline: auto;
+  background: currentColor;
+  transition: transform 0.22s var(--ease), opacity 0.22s var(--ease);
+}
+
+.burgerBars::before,
+.burgerBars::after {
+  content: '';
+  position: relative;
+}
+
+.burgerBars::before {
+  top: -7px;
+}
+
+.burgerBars::after {
+  top: 5px;
+}
+
+.burger[aria-expanded='true'] .burgerBars {
+  background: transparent;
+}
+
+.burger[aria-expanded='true'] .burgerBars::before {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.burger[aria-expanded='true'] .burgerBars::after {
+  transform: translateY(-5px) rotate(-45deg);
+}
+
+.drawer {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+  z-index: 110;
+  width: min(88vw, 400px);
+  padding: 1rem 1.5rem 2rem;
+  background: var(--paper);
+  color: var(--ink);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  transform: translateX(100%);
+  transition: transform 0.3s var(--ease);
+  box-shadow: var(--shadow-2);
+}
+
+.drawerTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: var(--header-h-scrolled);
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.drawerLogo {
+  display: block;
+  line-height: 0;
+}
+
+.drawerLogoImg {
+  width: auto;
+  height: 34px;
+}
+
+.drawerClose {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--ink-2);
+  cursor: pointer;
+  transition:
+    border-color 0.16s var(--ease),
+    color 0.16s var(--ease),
+    background 0.16s var(--ease);
+}
+
+.drawerClose:hover {
+  border-color: var(--brand);
+  background: var(--paper-2);
+  color: var(--brand-dark);
+}
+
+.drawerOpen {
+  transform: none;
+}
+
+.drawerList {
+  margin: 0 0 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.drawerList > li {
+  border-bottom: 1px solid var(--line);
+  padding-block: 0.35rem;
+}
+
+.drawerLink {
+  display: block;
+  padding: 0.55rem 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.drawerGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.45rem 0 0.2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.drawerContacts {
+  display: grid;
+  gap: 0.15rem;
+  margin-top: 1rem;
+}
+
+.drawerSub {
+  margin: 0 0 0.5rem;
+  padding: 0;
+  padding-inline-start: 0.9rem;
+  list-style: none;
+  border-inline-start: 2px solid var(--line);
+}
+
+.drawerSubLink {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem 0;
+  font-size: 0.92rem;
+  color: var(--ink-2);
+  text-decoration: none;
+}
+
+.drawerSubLink:hover {
+  color: var(--brand-dark);
+}
+
+/* Same four segment colours as the desktop panel, so mobile reads the catalogue alike. */
+.drawerDot {
+  flex: 0 0 auto;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background: var(--accent, var(--brand));
+}
+
+.drawerLink[aria-current='true'] {
+  color: var(--brand-dark);
+}
+
+.drawerLangs {
+  display: flex;
+  gap: 0.4rem;
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+}
+
+.drawerLang,
+.drawerLangActive {
+  padding: 0.35rem 0.6rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  color: var(--ink-2);
+}
+
+.drawerLang:hover {
+  border-color: var(--line-strong);
+}
+
+.drawerLangActive {
+  border-color: var(--brand);
+  background: var(--brand);
+  color: #fff;
+}
+
+.drawerQuote {
+  width: 100%;
+  justify-content: center;
+}
+
+.drawerPhone {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 40px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 105;
+  border: 0;
+  background: rgb(9 14 18 / 0.5);
+  cursor: pointer;
+}
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 1180px) {
+  .navLink {
+    font-size: 0.88rem;
+  }
+
+  .quoteLabel {
+    display: none;
+  }
+
+  .quoteLabelShort {
+    display: inline;
+  }
+}
+
+@media (max-width: 1000px) {
+  .nav {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .mainInner {
+    justify-content: space-between;
+  }
+
+  .quote {
+    margin-inline-start: auto;
+  }
+}
+
+/* The e-mail goes first, then the numbers collapse to their NL / MA codes. */
+@media (max-width: 1100px) {
+  .topMail {
+    display: none;
+  }
+}
+
+@media (max-width: 620px) {
+  .topText {
+    display: none;
+  }
+
+  .topLeft {
+    gap: 0.25rem;
+  }
+
+  /* Without its number the link would shrink to the icon: padding keeps a real target. */
+  .topLink {
+    padding-inline: 0.55rem;
+  }
+
+  .topLink:first-child {
+    margin-inline-start: -0.55rem;
+  }
+}

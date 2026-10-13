@@ -1,0 +1,289 @@
+/* Form styles shared by the quote and contact forms. */
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  gap: clamp(1.75rem, 4vw, 3.5rem);
+  align-items: start;
+}
+
+/* ---------- basket ---------- */
+
+.basket {
+  position: sticky;
+  top: calc(var(--header-h-scrolled) + 1.5rem);
+  padding: clamp(1.25rem, 2.5vw, 1.75rem);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--brand);
+  border-radius: var(--radius-lg);
+  background: var(--paper-2);
+}
+
+.basketHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.1rem;
+}
+
+.basketTitle {
+  margin: 0;
+  font-size: var(--step-1);
+}
+
+.clear {
+  border: 0;
+  background: none;
+  padding: 0;
+  font-size: 0.85rem;
+  color: var(--ink-3);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.clear:hover {
+  color: var(--sun-dark);
+}
+
+.lines {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.line {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.7rem;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.thumb {
+  width: 56px;
+  height: 56px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.lineBody {
+  min-width: 0;
+}
+
+.lineName {
+  margin: 0 0 0.35rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* Quantity and unit side by side: "12 pallets". */
+.qty {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.qty input,
+.qty select {
+  min-height: 36px;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 4px;
+  background: var(--paper);
+  font: inherit;
+  font-size: 0.9rem;
+}
+
+.qty input {
+  width: 5.5rem;
+}
+
+.remove {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 3px;
+  background: none;
+  color: var(--ink-3);
+  cursor: pointer;
+}
+
+.remove:hover {
+  background: color-mix(in srgb, var(--sun) 10%, transparent);
+  color: var(--sun-dark);
+}
+
+.count {
+  margin: 1rem 0 0;
+  font-size: 0.85rem;
+  color: var(--ink-3);
+}
+
+.emptyBox {
+  display: grid;
+  justify-items: start;
+  gap: 1rem;
+}
+
+.empty {
+  margin: 0;
+  color: var(--ink-3);
+}
+
+/* ---------- form ---------- */
+
+.formTitle {
+  margin: 0 0 1.25rem;
+  font-size: var(--step-2);
+}
+
+.form {
+  display: grid;
+  gap: 1rem;
+  justify-items: start;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 100%;
+}
+
+.field {
+  display: grid;
+  gap: 0.35rem;
+  width: 100%;
+}
+
+.label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink-2);
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: var(--paper);
+  font: inherit;
+  font-size: 0.95rem;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-color: var(--brand);
+}
+
+.field textarea {
+  resize: vertical;
+}
+
+.gotcha {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.error {
+  margin: 0;
+  padding: 0.7rem 0.9rem;
+  width: 100%;
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--sun) 8%, transparent);
+  border: 1px solid color-mix(in srgb, var(--sun) 35%, transparent);
+  color: #7a2e08;
+  font-size: 0.9rem;
+}
+
+/* ---------- sent ---------- */
+
+.done {
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+  max-width: 40rem;
+  margin-inline: auto;
+  padding: clamp(2rem, 5vw, 3.5rem);
+  text-align: center;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--paper-2);
+  color: var(--brand-dark);
+}
+
+.done p {
+  margin: 0;
+  font-size: var(--step-1);
+  color: var(--ink);
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .basket {
+    position: static;
+  }
+}
+
+@media (max-width: 560px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* The required-field star and its legend, as on the contact and careers forms. */
+.req {
+  color: var(--sun-dark);
+  font-weight: 700;
+}
+
+.legend {
+  margin: 0;
+  font-size: var(--step--1);
+  color: var(--ink-3);
+}
+
+.hint {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--ink-3);
+}
+
+.error a {
+  color: inherit;
+  font-weight: 600;
+}
+
+.consent {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--ink-3);
+}
+
+/* Submit + "Send on WhatsApp", side by side, wrapping on narrow screens. */
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+/* WhatsApp green on the icon only: white text on #25d366 fails contrast (2:1). */
+.whatsapp svg {
+  color: #25d366;
+}

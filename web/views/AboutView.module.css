@@ -1,0 +1,63 @@
+.mission {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  align-items: start;
+}
+
+.lead {
+  margin: 0;
+  font-size: var(--step-2);
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.aside {
+  padding-inline-start: clamp(1rem, 2vw, 1.5rem);
+  border-inline-start: 3px solid var(--sun);
+  color: var(--ink-2);
+}
+
+.aside p {
+  margin: 0;
+}
+
+.center {
+  margin-bottom: clamp(0.5rem, 1.5vw, 1.25rem);
+  text-align: center;
+}
+
+.promise {
+  background: var(--brand-darker);
+  color: #fff;
+}
+
+.promiseInner {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr);
+  gap: clamp(1.75rem, 5vw, 4rem);
+  align-items: center;
+}
+
+.promiseMedia img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  max-height: 45vh;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+
+.promise p {
+  margin: 0;
+  max-width: 56ch;
+  font-size: var(--step-1);
+  line-height: 1.55;
+  color: rgb(255 255 255 / 0.86);
+}
+
+@media (max-width: 860px) {
+  .mission,
+  .promiseInner {
+    grid-template-columns: 1fr;
+  }
+}

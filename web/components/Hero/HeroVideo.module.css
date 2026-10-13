@@ -1,0 +1,206 @@
+/*
+ * Full-bleed video hero, after bioworkseurope.com/nl: the media fills the section, a
+ * light wash keeps the type legible, and each line rises from behind its own mask.
+ */
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  min-height: 100svh;
+  padding-block: calc(var(--topbar-h) + var(--header-h) + 2rem) clamp(3rem, 8vh, 6rem);
+  overflow: hidden;
+  color: #fff;
+  background: var(--brand-darker);
+  isolation: isolate;
+}
+
+/*
+ * The home page since 2026-09-09: film and nothing else. With no text inside it the
+ * section has nothing to give it height, so it holds its own band, and the wash loses
+ * the heavy foot that was only ever there to carry a headline.
+ */
+.bare {
+  padding-block: calc(var(--topbar-h) + var(--header-h)) 0;
+}
+
+.bare .wash {
+  background: linear-gradient(to bottom, rgb(4 12 8 / 0.45) 0%, rgb(4 12 8 / 0.06) 38%, rgb(4 12 8 / 0.22) 100%);
+}
+
+.media {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/*
+ * bioworks uses a flat 10% black. That is not enough under a white headline on
+ * bright field footage, so the wash is a vertical gradient instead: heavier at the top
+ * where the header sits, heavier at the bottom under the text, light in the middle so
+ * the footage still reads.
+ */
+.wash {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to bottom, rgb(4 12 8 / 0.5) 0%, rgb(4 12 8 / 0.12) 42%, rgb(4 12 8 / 0.62) 100%),
+    linear-gradient(to right, rgb(4 12 8 / 0.35), rgb(4 12 8 / 0) 62%);
+}
+
+.inner {
+  position: relative;
+  width: min(100% - var(--gutter) * 2, var(--page));
+  max-width: 62rem;
+}
+
+/*
+ * The mask: the cropper hides the overflow, the child slides up into it. Both halves
+ * are needed — a transform alone would let the text peek out above its line.
+ */
+.cropper {
+  overflow: hidden;
+  padding-block: 0.12em;
+  margin-block: -0.12em;
+}
+
+.cropper > * {
+  animation: rise 0.9s var(--ease) both;
+  animation-delay: var(--delay, 0ms);
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(105%);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.title {
+  margin: 0;
+  max-width: 20ch;
+  font-size: var(--step-5);
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  text-shadow: 0 2px 24px rgb(0 0 0 / 0.35);
+}
+
+.subtitle {
+  margin: 0.9rem 0 0;
+  max-width: 44ch;
+  font-size: var(--step-1);
+  font-weight: 400;
+  line-height: 1.35;
+  color: rgb(255 255 255 / 0.94);
+  text-shadow: 0 1px 16px rgb(0 0 0 / 0.4);
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0 0 1rem;
+  font-size: var(--step--1);
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.eyebrow::before {
+  content: '';
+  width: 2rem;
+  height: 2px;
+  background: var(--sun);
+}
+
+.ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+/*
+ * The signature burnt into the bottom-left of the film. It sits on the page gutter so
+ * it lines up with the content below, and carries its own soft shadow because the wash
+ * is deliberately light in the middle of the frame.
+ */
+.caption {
+  position: absolute;
+  inset-inline-start: max(var(--gutter), (100vw - var(--page)) / 2);
+  bottom: clamp(1.1rem, 3.5vh, 2.2rem);
+  margin: 0;
+  max-width: min(90vw, 30ch);
+  font-size: var(--step-1);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+  color: #fff;
+  text-shadow: 0 2px 18px rgb(0 0 0 / 0.55);
+}
+
+.credit {
+  position: absolute;
+  inset-inline-end: 0.75rem;
+  bottom: 0.5rem;
+  margin: 0;
+  /* Small, but not below the 12px floor — it is a licence credit, it has to be legible. */
+  font-size: 0.75rem;
+  color: rgb(255 255 255 / 0.6);
+}
+
+@media (max-width: 700px) {
+  /* Still full screen, with the text settling at the foot of the frame. */
+  .hero {
+    align-items: flex-end;
+    padding-block: calc(var(--topbar-h) + var(--header-h) + 2rem) 3rem;
+  }
+
+  /* No text to set the height, so keep a cinematic band rather than a strip of padding. */
+  .bare {
+    min-height: clamp(360px, 58vh, 520px);
+    padding-block: var(--header-h) 0;
+  }
+
+  /*
+   * The client's title is a full sentence (2026-09-27): at the desktop scale it ran to
+   * six or seven lines on a phone. About 25px at 360px wide, 32px at the breakpoint.
+   */
+  .title {
+    font-size: clamp(1.5rem, 1rem + 2.3vw, 2rem);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+
+  .subtitle {
+    max-width: none;
+  }
+
+  .caption {
+    inset-inline-start: var(--gutter);
+    inset-inline-end: var(--gutter);
+    bottom: 1rem;
+    max-width: none;
+    font-size: 1.05rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cropper > * {
+    animation: none;
+  }
+}

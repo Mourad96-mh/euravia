@@ -1,0 +1,179 @@
+.header {
+  position: relative;
+  padding-block: clamp(2.25rem, 4vw, 3.75rem) clamp(1.75rem, 3vw, 2.75rem);
+  background: var(--paper-2);
+  border-bottom: 1px solid var(--line);
+}
+
+/* A hairline of the segment colour ties the page to its part of the catalogue. */
+.header::before {
+  content: '';
+  position: absolute;
+  inset-inline: 0;
+  top: 0;
+  height: 3px;
+  background: var(--accent, var(--brand));
+  z-index: 2;
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
+}
+
+/* ---------------------------------------------------------- photographic variant */
+
+.onImage {
+  display: flex;
+  align-items: flex-end;
+  min-height: clamp(280px, 34vh, 420px);
+  padding-block: clamp(3rem, 7vw, 5rem) clamp(2rem, 4vw, 3.25rem);
+  border-bottom: 0;
+  color: #fff;
+  background: var(--brand-darker);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.media {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.img {
+  object-fit: cover;
+  object-position: center;
+}
+
+/*
+ * Same recipe as the home hero, tuned for a shorter band: heavier at the bottom where
+ * the title sits and along the leading edge, light at the top so the picture still reads
+ * under the header.
+ */
+.wash {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to bottom, rgb(4 12 8 / 0.42) 0%, rgb(4 12 8 / 0.28) 38%, rgb(4 12 8 / 0.74) 100%),
+    linear-gradient(to right, rgb(4 12 8 / 0.5), rgb(4 12 8 / 0) 70%);
+}
+
+/* ------------------------------------------------------------------------ content */
+
+.crumbs {
+  margin-bottom: 1.15rem;
+  font-size: var(--step--1);
+  color: var(--ink-3);
+}
+
+.crumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.crumbs li + li::before {
+  content: '/';
+  margin-inline-end: 0.4rem;
+  color: var(--line-strong);
+}
+
+.crumbs a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.crumbs a:hover {
+  color: var(--brand-dark);
+  text-decoration: underline;
+}
+
+.eyebrow {
+  margin: 0 0 0.6rem;
+  font-size: var(--step--1);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent, var(--brand-dark));
+}
+
+.title {
+  margin: 0;
+  max-width: 22ch;
+}
+
+.lead {
+  margin: 0.9rem 0 0;
+  font-size: var(--step-1);
+  color: var(--ink-2);
+  max-width: 60ch;
+}
+
+.intro {
+  margin-top: 1.1rem;
+  max-width: 62ch;
+}
+
+.introTitle {
+  margin: 0 0 0.5rem;
+  font-size: var(--step-1);
+  line-height: 1.3;
+  color: var(--ink);
+}
+
+.introText {
+  margin: 0 0 0.6rem;
+  color: var(--ink-2);
+}
+
+.introText:last-child {
+  margin-bottom: 0;
+}
+
+/*
+ * On a photograph the accent colours cannot be trusted for text — three of the four
+ * segment colours fail contrast over a mid-tone picture — so type goes white and the
+ * accent keeps to the hairline at the top of the band.
+ */
+.onImage .crumbs {
+  color: rgb(255 255 255 / 0.78);
+}
+
+.onImage .crumbs li + li::before {
+  color: rgb(255 255 255 / 0.45);
+}
+
+.onImage .crumbs a:hover {
+  color: #fff;
+}
+
+.onImage .eyebrow {
+  color: #fff;
+  text-shadow: 0 1px 12px rgb(0 0 0 / 0.45);
+}
+
+.onImage .title {
+  max-width: 24ch;
+  text-shadow: 0 2px 20px rgb(0 0 0 / 0.4);
+}
+
+.onImage .lead,
+.onImage .introText {
+  color: rgb(255 255 255 / 0.94);
+  text-shadow: 0 1px 14px rgb(0 0 0 / 0.45);
+}
+
+.onImage .introTitle {
+  color: #fff;
+  text-shadow: 0 1px 14px rgb(0 0 0 / 0.45);
+}
+
+@media (max-width: 700px) {
+  .onImage {
+    min-height: 240px;
+  }
+}

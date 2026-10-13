@@ -1,0 +1,195 @@
+.top {
+  position: relative;
+  padding-block: clamp(1.5rem, 3vw, 2.5rem) clamp(2.5rem, 5vw, 4rem);
+  background: linear-gradient(180deg, var(--paper-2), var(--paper));
+  border-top: 3px solid var(--accent);
+}
+
+.crumbs {
+  margin-bottom: clamp(1.25rem, 2.5vw, 2rem);
+  font-size: var(--step--1);
+  color: var(--ink-3);
+}
+
+.crumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.crumbs li + li::before {
+  content: '/';
+  margin-inline-end: 0.4rem;
+  color: var(--line-strong);
+}
+
+.crumbs a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.crumbs a:hover {
+  color: var(--brand-dark);
+  text-decoration: underline;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: clamp(1.75rem, 4.5vw, 4rem);
+  align-items: center;
+}
+
+.figure {
+  position: relative;
+  margin: 0;
+  aspect-ratio: 4 / 3;
+  max-height: 60vh;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  background: var(--paper-3);
+  box-shadow: var(--shadow-2);
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.95);
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 0.6rem;
+  font-size: var(--step--1);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.category::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  background: currentColor;
+}
+
+.title {
+  margin: 0 0 0.6rem;
+  font-size: var(--step-4);
+}
+
+.tagline {
+  margin: 0;
+  font-size: var(--step-1);
+  line-height: 1.45;
+  color: var(--ink-2);
+}
+
+/* Key facts as a two-column table the eye can scan. */
+.facts {
+  display: grid;
+  margin: 1.5rem 0 1.75rem;
+  border-top: 1px solid var(--line);
+}
+
+.fact {
+  display: grid;
+  grid-template-columns: minmax(8rem, 0.6fr) 1fr;
+  gap: 1rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.fact dt {
+  font-size: var(--step--1);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.fact dd {
+  margin: 0;
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+/* ---------- description + highlights ---------- */
+
+.details {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: start;
+}
+
+.text {
+  max-width: 66ch;
+  color: var(--ink-2);
+}
+
+.intro {
+  font-size: var(--step-1);
+  line-height: 1.5;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.side {
+  padding: clamp(1.25rem, 2.5vw, 1.75rem);
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+}
+
+.sideTitle {
+  margin: 0 0 0.9rem;
+  font-size: var(--step-1);
+}
+
+.checks {
+  display: grid;
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.checks li {
+  display: flex;
+  gap: 0.65rem;
+  align-items: flex-start;
+  line-height: 1.45;
+}
+
+.checks svg {
+  flex: 0 0 auto;
+  margin-top: 0.1rem;
+  color: var(--accent);
+}
+
+.season {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+}
+
+@media (max-width: 900px) {
+  .grid,
+  .details {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,5 @@
+# mail-config.php holds the mailbox password, mailer.php only the shared code: neither is
+# ever served, even as source.
+<FilesMatch "^(mail-config|mailer)">
+  Require all denied
+</FilesMatch>

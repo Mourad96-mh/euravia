@@ -1,0 +1,208 @@
+{
+  "tomatoes": {
+    "name": "Tomates",
+    "tagline": "Douceur naturelle, chair ferme et longue conservation.",
+    "intro": "Cultivées dans des conditions climatiques optimales, nos tomates du Maroc offrent le juste équilibre entre douceur naturelle, chair ferme et durée de conservation prolongée.",
+    "body": [
+      "Les hivers doux et le fort ensoleillement du Maroc permettent aux producteurs de livrer des tomates quand la production européenne est faible. Nous sélectionnons des fruits de calibre et de couleur homogènes, conditionnés pour garder leur fermeté jusqu'à votre centre de distribution."
+    ],
+    "highlights": ["Douceur naturelle équilibrée", "Chair ferme qui supporte le transport", "Conservation prolongée", "Calibre et couleur homogènes"],
+    "origin": "Maroc"
+  },
+  "cherry-tomatoes": {
+    "name": "Tomates cerises",
+    "tagline": "Calibre régulier, couleur uniforme et taux de Brix élevé.",
+    "intro": "Issues directement de serres de haute technologie dans les meilleures zones de culture du Maroc, dont le Souss-Massa.",
+    "body": [
+      "Nos tomates cerises offrent un calibre d'une grande régularité, une coloration uniforme et un taux de Brix élevé : la saveur sucrée, fiable et haut de gamme que recherchent les consommateurs."
+    ],
+    "highlights": ["Cultivées sous serre dans le Souss-Massa", "Calibre très régulier", "Coloration uniforme", "Brix élevé, saveur sucrée premium"],
+    "origin": "Maroc · Souss-Massa"
+  },
+  "kapia-pepper": {
+    "name": "Poivrons Kapia",
+    "tagline": "Poivrons pointus doux, sans piquant, pour le gril et les salades.",
+    "intro": "Valorisez votre rayon fruits et légumes avec des poivrons Kapia du Maroc de première qualité.",
+    "body": [
+      "Reconnaissables à leur forme conique et à leur chair particulièrement douce et non piquante, ces poivrons pointus sont incontournables grillés, rôtis ou tranchés crus en salade.",
+      "Cultivés par des producteurs marocains expérimentés, ils profitent d'un climat idéal qui garantit une coloration régulière, une chair ferme et une longue conservation."
+    ],
+    "highlights": ["Forme conique caractéristique", "Chair très douce, sans piquant", "Idéal grillé, rôti ou en salade", "Coloration régulière, longue conservation"],
+    "origin": "Maroc"
+  },
+  "california-pepper": {
+    "name": "Poivrons California",
+    "tagline": "Poivrons carrés rouges, verts et jaunes mûris au soleil.",
+    "intro": "Découvrez le goût éclatant de nos poivrons California Wonder, issus directement des champs fertiles et ensoleillés des grandes régions agricoles du Maroc comme le Souss-Massa.",
+    "body": [
+      "Appréciés pour leurs parois épaisses et croquantes et leur forme carrée symétrique, nos poivrons California rouges, verts et jaunes sont récoltés, lavés et triés avec soin selon des normes internationales exigeantes."
+    ],
+    "highlights": ["Rouges, verts et jaunes", "Parois épaisses et croquantes", "Forme carrée symétrique", "Récoltés, lavés et triés aux normes internationales"],
+    "origin": "Maroc · Souss-Massa"
+  },
+  "chili-peppers": {
+    "name": "Piments",
+    "tagline": "De la touche douce et colorée au piquant intense, toute l'année.",
+    "intro": "Répondez à la demande mondiale de saveurs relevées avec des piments frais venus directement du Maroc.",
+    "body": [
+      "Mûris au soleil, ces piments vont d'une note douce et colorée à des profils très forts et ardents, pour les fabricants de sauces piquantes, les épiceries fines et les consommateurs curieux.",
+      "Grâce à une route commerciale courte et intégrée vers l'Europe, vous bénéficiez d'une fraîcheur optimale, d'un bel aspect et d'un approvisionnement régulier toute l'année."
+    ],
+    "highlights": ["Du doux au très piquant", "Pour sauciers, distributeurs et restauration", "Route courte et intégrée vers l'Europe", "Approvisionnement régulier toute l'année"],
+    "origin": "Maroc",
+    "availability": "Toute l'année"
+  },
+  "eggplant": {
+    "name": "Aubergines",
+    "tagline": "Brillantes, régulières et fermes, de novembre à juin.",
+    "intro": "Profitez du climat de culture idéal du Maroc avec notre sélection d'aubergines fraîches haut de gamme.",
+    "body": [
+      "Cultivées dans des serres modernes, principalement dans la région très productive du Souss-Massa, nos aubergines présentent une peau brillante et profonde, un calibre régulier et une chair ferme et dense, avec une excellente conservation.",
+      "Grâce à la précocité des récoltes marocaines, nous proposons une saison d'export étendue de novembre à juin. Chaque expédition respecte les normes de qualité internationales : traçabilité complète, certification GlobalG.A.P. et maîtrise des températures (maintenues au-dessus de 10 °C) pour préserver la fraîcheur du champ à la livraison."
+    ],
+    "highlights": ["Peau brillante, calibre régulier", "Chair ferme et dense", "Certifiées GlobalG.A.P., traçabilité complète", "Chaîne du froid au-dessus de 10 °C"],
+    "origin": "Maroc · Souss-Massa",
+    "availability": "Novembre – juin",
+    "certification": "GlobalG.A.P.",
+    "storage": "Au-dessus de 10 °C"
+  },
+  "zucchini": {
+    "name": "Courgettes",
+    "tagline": "Croquantes, cultivées durablement, livrées avec régularité.",
+    "intro": "Fraîcheur, qualité et approvisionnement fiable : les meilleures courgettes cultivées durablement, issues directement des régions agricoles fertiles du Maroc.",
+    "body": [
+      "Nous faisons le lien entre des producteurs marocains engagés et les marchés internationaux, et livrons des produits croquants et de grande qualité jusqu'à votre site."
+    ],
+    "highlights": ["Culture durable", "Croquantes, qualité premium", "En direct des producteurs marocains", "Livrées jusqu'à votre site"],
+    "origin": "Maroc"
+  },
+  "green-beans": {
+    "name": "Haricots verts",
+    "tagline": "Fins, sans fils et d'un vert éclatant.",
+    "intro": "Les haricots verts du Maroc sont réputés pour leur croquant délicat, leur forme fine, leur vert éclatant et leur texture sans fils.",
+    "body": [
+      "Cueillis à la main et calibrés, ils sont conditionnés pour garder leur croquant et leur couleur jusqu'à vos rayons."
+    ],
+    "highlights": ["Croquant délicat", "Forme fine", "Vert éclatant", "Sans fils"],
+    "origin": "Maroc"
+  },
+  "avocado": {
+    "name": "Avocats",
+    "tagline": "Riches en huile, texture crémeuse et saveur intense.",
+    "intro": "Le microclimat marocain, où des journées côtières chaudes rencontrent des nuits atlantiques fraîches, offre des conditions idéales pour cultiver des avocats d'exception.",
+    "body": [
+      "Le résultat : des fruits à forte teneur en huile, à la texture crémeuse et au goût riche, triés et conditionnés pour les programmes de grande distribution et de gros."
+    ],
+    "highlights": ["Forte teneur en huile", "Texture crémeuse", "Saveur riche", "Cultivés sur la côte atlantique marocaine"],
+    "origin": "Maroc · côte atlantique"
+  },
+  "citrus": {
+    "name": "Agrumes",
+    "tagline": "Fruits sucrés et juteux, peau de grande qualité.",
+    "intro": "Le Maroc est réputé dans le monde entier pour ses agrumes.",
+    "body": [
+      "Son relief, protégé par l'Atlas et rafraîchi par les brises atlantiques et méditerranéennes, crée l'environnement idéal pour des fruits remarquablement sucrés, juteux et à la peau de belle qualité."
+    ],
+    "highlights": ["Douceur remarquable", "Fruits juteux", "Peau de grande qualité", "Vergers abrités par l'Atlas"],
+    "origin": "Maroc"
+  },
+  "strawberries": {
+    "name": "Fraises",
+    "tagline": "Arôme intense, chair ferme, disponibles dès le début de saison.",
+    "intro": "Nos fraises mûrissent sous le soleil marocain et développent un arôme intense, une douceur équilibrée et une chair ferme qui assure une excellente conservation.",
+    "body": [
+      "Grâce au climat favorable du Maroc, la pleine récolte commence tôt dans la saison : nous pouvons ainsi fournir des fraises premium aux marchés européens et mondiaux quand la production locale est faible."
+    ],
+    "highlights": ["Arôme intense", "Douceur équilibrée", "Chair ferme, excellente conservation", "Disponibles tôt pour l'Europe"],
+    "origin": "Maroc",
+    "availability": "Début de saison"
+  },
+  "raspberries": {
+    "name": "Framboises",
+    "tagline": "Des fruits robustes qui arrivent comme fraîchement cueillis.",
+    "intro": "Nous sélectionnons des variétés de framboises choisies pour leur excellence.",
+    "body": [
+      "Nos framboises ont une structure robuste qui résiste aux chocs : elles arrivent sur vos plateformes de distribution aussi impeccables qu'au jour de la cueillette."
+    ],
+    "highlights": ["Variétés sélectionnées", "Structure robuste, résistante aux chocs", "Arrivent comme fraîchement cueillies"],
+    "origin": "Maroc"
+  },
+  "blueberries": {
+    "name": "Myrtilles",
+    "tagline": "Gros calibre, croquant ferme, prêtes pour le rayon.",
+    "intro": "Cultivées dans des microclimats côtiers idéaux et ensoleillées toute l'année, les myrtilles du Maroc sont réputées pour leur gros calibre, leur croquant ferme et leur richesse en antioxydants.",
+    "body": [
+      "Nous livrons des myrtilles premium, prêtes pour le rayon, directement aux distributeurs et enseignes internationales."
+    ],
+    "highlights": ["Gros calibre", "Croquant ferme", "Riches en antioxydants", "Prêtes pour la grande distribution"],
+    "origin": "Maroc · régions côtières"
+  },
+  "watermelon": {
+    "name": "Pastèques",
+    "tagline": "Taux de Brix élevé, croquantes et rafraîchissantes, en volume.",
+    "intro": "Cultivées dans les régions les plus ensoleillées du Maroc, nos pastèques sont connues pour leur taux de Brix (sucre) élevé, leur chair croquante et leur goût rafraîchissant.",
+    "body": [
+      "Nous gérons tout, de la récolte au champ jusqu'à l'expédition internationale, pour des livraisons à grande échelle vers la distribution, le gros et la restauration dans le monde entier."
+    ],
+    "highlights": ["Taux de Brix (sucre) élevé", "Chair croquante", "Du champ à l'expédition, géré par nous", "Grands volumes"],
+    "origin": "Maroc · Espagne"
+  },
+  "melon": {
+    "name": "Melons",
+    "tagline": "Melons sucrés et parfumés des champs ensoleillés de Méditerranée.",
+    "intro": "Des melons sucrés et parfumés, issus des régions les plus ensoleillées du Maroc et de la Méditerranée.",
+    "body": [
+      "Récoltés à bonne maturité et conditionnés pour préserver leur arôme et leur douceur, nos melons sont destinés à la distribution, au gros et à la restauration. Demandez-nous les variétés et calibres disponibles."
+    ],
+    "highlights": ["Récoltés à bonne maturité", "Sucrés et parfumés", "Pour la distribution, le gros et la restauration"],
+    "origin": "Maroc · Méditerranée"
+  },
+  "iqf-strawberries": {
+    "name": "Fraises surgelées IQF",
+    "tagline": "D'un des cinq premiers exportateurs mondiaux de fraises surgelées.",
+    "intro": "Le Maroc figure parmi les cinq premiers exportateurs mondiaux de fraises surgelées, grâce à un climat idéal et à des sols fertiles.",
+    "body": [
+      "Chez Euravia, nous maîtrisons toute la chaîne d'approvisionnement. En supervisant la sélection des parcelles, la récolte, la transformation et la logistique sous froid, nous garantissons des fruits conformes à vos cahiers des charges B2B."
+    ],
+    "highlights": ["Surgelées individuellement (IQF)", "De la parcelle à la chaîne du froid, géré par nous", "Conformes à votre cahier des charges", "Disponibles toute l'année"],
+    "origin": "Maroc",
+    "availability": "Toute l'année",
+    "storage": "−18 °C"
+  },
+  "iqf-blackberries": {
+    "name": "Mûres surgelées IQF",
+    "tagline": "Charnues, sucrées, d'une couleur profonde, toute l'année.",
+    "intro": "Le climat marocain donne des mûres exceptionnellement charnues, sucrées et d'une couleur profonde.",
+    "body": [
+      "Grâce à la surgélation IQF juste après la récolte, nous offrons aux acheteurs internationaux un approvisionnement fiable toute l'année, d'une qualité proche du fruit fraîchement cueilli."
+    ],
+    "highlights": ["Charnues, sucrées, couleur profonde", "Surgelées juste après la récolte", "Qualité proche du frais", "Approvisionnement fiable toute l'année"],
+    "origin": "Maroc",
+    "availability": "Toute l'année",
+    "storage": "−18 °C"
+  },
+  "iqf-raspberries": {
+    "name": "Framboises surgelées IQF",
+    "tagline": "Framboises parfumées rouge rubis, surgelées dès la récolte.",
+    "intro": "Le climat marocain allie soleil et températures douces pour produire des framboises très parfumées, sucrées et bien structurées.",
+    "body": [
+      "Surgelées dès la récolte, elles conservent la saveur délicate du fruit et sa couleur rouge rubis intense : un produit premium quelle que soit la saison."
+    ],
+    "highlights": ["Parfumées et sucrées", "Fruits bien structurés", "Rouge rubis intense", "Qualité premium en toute saison"],
+    "origin": "Maroc",
+    "availability": "Toute l'année",
+    "storage": "−18 °C"
+  },
+  "iqf-blueberries": {
+    "name": "Myrtilles surgelées IQF",
+    "tagline": "Équilibre sucré-acidulé, bleu profond, fermeté naturelle.",
+    "intro": "Le Maroc est devenu un acteur mondial de premier plan dans la culture de la myrtille.",
+    "body": [
+      "Ses régions du nord et du littoral, aux hivers doux et aux sols riches, donnent des myrtilles à l'équilibre sucré-acidulé remarquable, d'un bleu profond et naturellement fermes. Surgelées juste après la récolte, elles offrent aux acheteurs internationaux un fruit premium et une grande stabilité d'approvisionnement."
+    ],
+    "highlights": ["Équilibre sucré-acidulé", "Bleu profond intense", "Fermeté naturelle", "Approvisionnement stable dans la durée"],
+    "origin": "Maroc · nord et littoral",
+    "availability": "Toute l'année",
+    "storage": "−18 °C"
+  }
+}

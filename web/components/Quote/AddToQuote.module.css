@@ -1,0 +1,52 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid var(--brand);
+  border-radius: var(--radius);
+  background: var(--brand);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: background 0.18s var(--ease), border-color 0.18s var(--ease), color 0.18s var(--ease);
+}
+
+.btn:hover:not(:disabled) {
+  background: var(--brand-dark);
+  border-color: var(--brand-dark);
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.small {
+  padding: 0.5rem 0.85rem;
+  font-size: 0.86rem;
+}
+
+/*
+ * Already in the basket: outlined, so it reads as a state rather than an action.
+ *
+ * Both selectors are qualified with `.btn` on purpose. The hover rule above is
+ * `.btn:hover:not(:disabled)` — three selectors against a bare `.done:hover`'s two — so
+ * it used to win on hover and paint the green background back in while the text stayed
+ * green-dark: the label vanished into it.
+ */
+.btn.done,
+.btn.done:hover:not(:disabled) {
+  background: transparent;
+  color: var(--brand-dark);
+  border-color: var(--brand);
+  cursor: default;
+}
+
+/* The tick and the label lift together, so the state still answers the pointer. */
+.btn.done:hover:not(:disabled) {
+  border-color: var(--brand-dark);
+  background: var(--paper-2);
+}

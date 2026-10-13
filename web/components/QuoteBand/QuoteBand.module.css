@@ -1,0 +1,45 @@
+.band {
+  position: relative;
+  padding-block: clamp(2.75rem, 5vw, 4.25rem);
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    var(--brand-darker) 0%,
+    var(--brand-darker) 58%,
+    color-mix(in srgb, var(--brand-darker) 70%, var(--footer)) 100%
+  );
+  color: #fff;
+}
+
+/* A low sun on the horizon, the logo's motif, so the band is not a flat slab. */
+.band::before {
+  content: '';
+  position: absolute;
+  inset-inline-end: -8rem;
+  top: -10rem;
+  width: 26rem;
+  height: 26rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgb(233 121 43 / 0.28), transparent 65%);
+  pointer-events: none;
+}
+
+.inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(1.25rem, 3vw, 3rem);
+  flex-wrap: wrap;
+}
+
+.title {
+  margin: 0 0 0.4rem;
+  font-size: var(--step-3);
+}
+
+.text {
+  margin: 0;
+  max-width: 62ch;
+  color: rgb(255 255 255 / 0.84);
+}

@@ -1,0 +1,359 @@
+{
+  "site": {
+    "name": "Euravia",
+    "tagline": "Fresh & frozen produce from Morocco",
+    "description": "Euravia sources, packs and supplies premium fresh and IQF frozen fruit and vegetables from Morocco and the Mediterranean to buyers across Europe. Offices in Utrecht and Casablanca."
+  },
+  "a11y": {
+    "skipToContent": "Skip to content",
+    "mainNav": "Main navigation",
+    "breadcrumb": "Breadcrumb"
+  },
+  "nav": {
+    "home": "Home",
+    "fresh": "Fresh",
+    "frozen": "Frozen",
+    "about": "Euravia",
+    "blog": "Blog",
+    "contact": "Contact",
+    "quote": "Quote request",
+    "quoteShort": "Quote",
+    "allFresh": "All fresh produce",
+    "allFrozen": "All frozen fruit",
+    "openMenu": "Open the menu",
+    "closeMenu": "Close the menu",
+    "language": "Language"
+  },
+  "categories": {
+    "fresh": {
+      "name": "Fresh produce",
+      "short": "Vegetables and fruit, packed on harvest day",
+      "blurb": "Sun-ripened Moroccan vegetables and fruit, harvested at the right moment and packed to reach your distribution centre in peak condition."
+    },
+    "vegetables": {
+      "name": "Fresh vegetables",
+      "short": "Tomatoes, peppers, eggplants, beans…",
+      "blurb": "Tomatoes, peppers, eggplants, zucchini and green beans from Morocco's greenhouse regions, with consistent sizing, uniform colour and a long shelf life."
+    },
+    "fruits": {
+      "name": "Fresh fruit",
+      "short": "Avocados, citrus, berries, melons…",
+      "blurb": "Avocados, citrus, berries and melons grown between the Atlas and the Atlantic, with the sweetness, aroma and firmness European shoppers expect."
+    },
+    "frozen": {
+      "name": "Frozen fruit (IQF)",
+      "short": "Strawberries, raspberries, blackberries, blueberries",
+      "blurb": "Berries individually quick frozen right after harvest: fresh-picked colour and flavour, free-flowing, and available all year round."
+    }
+  },
+  "home": {
+    "heroTitle": "Fresh & frozen produce, from Moroccan fields to European shelves",
+    "heroText": "Premium vegetables, fruit and IQF berries, sourced at origin and delivered through a controlled cold chain.",
+    "heroPrimary": "Explore our produce",
+    "heroSecondary": "Request a quote",
+    "eyebrow": "Euravia",
+    "title": "Your trusted gateway to the finest fresh and frozen produce of the Mediterranean",
+    "lead": "We source, pack and supply premium fruit and vegetables directly from the most fertile regions of Morocco, Spain and the wider Mediterranean.",
+    "paragraphs": [
+      "Founded with a passion for agricultural excellence and reliable logistics, Euravia bridges the gap between sun-drenched coastal farms and global markets.",
+      "Whether you need fresh produce picked at the peak of ripeness or individually quick frozen (IQF) fruit that keeps its nutritional value and flavour, our international clients receive the highest standard, exactly when they need it."
+    ],
+    "pillarsTitle": "Five reasons buyers source with Euravia",
+    "pillars": [
+      {
+        "title": "Sun-ripened origin",
+        "text": "Fertile regions such as Souss-Massa and the Atlantic coast, with sunshine almost all year round."
+      },
+      {
+        "title": "Early-season supply",
+        "text": "Morocco harvests when European production is low, so your shelves stay full."
+      },
+      {
+        "title": "Cold chain & IQF",
+        "text": "Temperature-controlled from farm to delivery, and berries frozen right after harvest."
+      },
+      {
+        "title": "Traceability & standards",
+        "text": "Full traceability and international quality standards, including GlobalG.A.P. certification."
+      },
+      {
+        "title": "Two offices, one chain",
+        "text": "Casablanca at the source, Utrecht next to our European customers."
+      }
+    ],
+    "rangesTitle": "Our ranges",
+    "featuredTitle": "Popular with our buyers",
+    "featuredLead": "Add products to your quote request and tell us your volumes. We reply with availability and a price.",
+    "officesTitle": "From the field in Morocco to your door in Europe",
+    "officesText": "Our Casablanca team works with growers and packing stations at origin. Our Utrecht office handles European customers, documents and delivery.",
+    "facts": [
+      {
+        "value": "19",
+        "label": "Products in our range"
+      },
+      {
+        "value": "2",
+        "label": "Offices: Utrecht & Casablanca"
+      },
+      {
+        "value": "3",
+        "label": "Sourcing areas: Morocco, Spain, Mediterranean"
+      },
+      {
+        "value": "−18 °C",
+        "label": "IQF cold chain for frozen fruit"
+      }
+    ],
+    "quoteTitle": "Looking for a reliable produce supplier?",
+    "quoteText": "Tell us the products, volumes and destination. We'll come back with availability and a quote.",
+    "quoteCta": "Request a quote"
+  },
+  "catalog": {
+    "addToQuote": "Add to quote",
+    "inQuote": "In your quote",
+    "details": "Details",
+    "origin": "Origin",
+    "availability": "Availability",
+    "onRequest": "On request",
+    "certification": "Certification",
+    "storage": "Storage",
+    "highlights": "Key qualities",
+    "season": "Export season",
+    "inSeason": "In season",
+    "related": "You may also need",
+    "seeRange": "See the range",
+    "filterAll": "All",
+    "count": {
+      "one": "product",
+      "other": "products"
+    },
+    "months": [
+      "J",
+      "F",
+      "M",
+      "A",
+      "M",
+      "J",
+      "J",
+      "A",
+      "S",
+      "O",
+      "N",
+      "D"
+    ],
+    "monthNames": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ],
+    "askTitle": "Need a price or a specification?",
+    "askText": "Add this product to your quote request, or contact our team directly.",
+    "seoTitle": "{name} from Morocco"
+  },
+  "fresh": {
+    "title": "Fresh produce",
+    "lead": "Vegetables and fruit from Morocco and the Mediterranean, harvested at the right maturity, packed for long transport and shipped under temperature control."
+  },
+  "frozen": {
+    "title": "Frozen fruit (IQF)",
+    "lead": "Moroccan berries individually quick frozen right after harvest. We manage the chain from field selection to −18 °C logistics, to your B2B specification.",
+    "iqfTitle": "Why IQF",
+    "iqfPoints": [
+      {
+        "title": "Frozen at harvest",
+        "text": "Fruit is frozen within hours of picking, locking in colour and flavour."
+      },
+      {
+        "title": "Free-flowing",
+        "text": "Each berry is frozen separately, so you can portion by the gram."
+      },
+      {
+        "title": "Year-round",
+        "text": "A seasonal crop becomes a stable supply for your production planning."
+      }
+    ]
+  },
+  "why": {
+    "title": "Why Moroccan produce",
+    "points": [
+      {
+        "title": "Climate",
+        "text": "Atlas-sheltered valleys, Atlantic breezes and sunshine almost all year."
+      },
+      {
+        "title": "Timing",
+        "text": "Harvests start early in the season, when European fields are still empty."
+      },
+      {
+        "title": "Proximity",
+        "text": "A short crossing to Europe means fresher produce and longer shelf life on arrival."
+      }
+    ]
+  },
+  "about": {
+    "title": "Welcome to Euravia",
+    "lead": "Your trusted gateway to the finest fresh and frozen fruit from the heart of the Mediterranean.",
+    "mission": [
+      "Euravia was founded with a passion for agricultural excellence and reliable logistics. We specialise in sourcing, packing and supplying premium produce directly from the most fertile regions of Morocco, Spain and the wider Mediterranean basin.",
+      "By bridging the gap between sun-drenched coastal farms and global markets, we make sure our international clients receive the highest standard of fruit and vegetables, exactly when they need them."
+    ],
+    "footprintTitle": "Our global footprint",
+    "morocco": {
+      "title": "Morocco",
+      "text": "Optimal growing conditions and proximity to Europe. We source exceptional citrus, field-fresh berries, vegetables and stone fruit, packed on harvest day."
+    },
+    "mediterranean": {
+      "title": "Spain & the Mediterranean",
+      "text": "Advanced agricultural infrastructure for stable, year-round supplies of premium watermelons, grapes, avocados and seasonal produce."
+    },
+    "promiseTitle": "Fresh or frozen, the same commitment",
+    "promiseText": "Whether you need fresh produce picked at the peak of ripeness or individually quick frozen (IQF) fruit that preserves its nutritional value and flavour, Euravia is committed to quality, rigorous food-safety standards and seamless logistics.",
+    "officesTitle": "Our offices"
+  },
+  "blog": {
+    "title": "Blog",
+    "lead": "Seasons, sourcing and the cold chain: notes from the field for produce buyers.",
+    "readMore": "Read the article",
+    "related": "Products mentioned",
+    "back": "All articles"
+  },
+  "offices": {
+    "nl": {
+      "name": "Netherlands",
+      "role": "European sales & logistics"
+    },
+    "ma": {
+      "name": "Morocco",
+      "role": "Sourcing & packing at origin"
+    },
+    "map": "Open in maps"
+  },
+  "contact": {
+    "title": "Contact",
+    "lead": "Questions about a product, a season or a delivery? Our teams in Utrecht and Casablanca will answer you.",
+    "formTitle": "Send us a message",
+    "subject": "Subject",
+    "subjects": [
+      "Fresh produce",
+      "Frozen fruit (IQF)",
+      "Logistics & delivery",
+      "Become a supplier",
+      "Other"
+    ],
+    "firstName": "First name",
+    "lastName": "Last name",
+    "company": "Company",
+    "email": "E-mail",
+    "phone": "Phone",
+    "country": "Country",
+    "message": "Message",
+    "required": "Required fields",
+    "submit": "Send the message",
+    "sending": "Sending…",
+    "success": "Thank you, your message has been sent. We'll reply within one working day.",
+    "error": "Your message could not be sent. Please write to us directly at",
+    "orWhatsapp": "or on WhatsApp",
+    "consent": "We only use your details to answer your request. See our privacy policy.",
+    "whatsapp": "WhatsApp",
+    "emailUs": "E-mail us"
+  },
+  "quote": {
+    "title": "Quote request",
+    "intro": "Collect products as you browse, set your volumes, and send us one request. We reply with availability and prices.",
+    "basket": "Your selection",
+    "empty": "Your quote request is empty.",
+    "emptyCta": "Browse our produce",
+    "remove": "Remove",
+    "clear": "Clear all",
+    "quantity": "Quantity",
+    "unit": "Unit",
+    "units": {
+      "kg": "kg",
+      "pallets": "pallets",
+      "containers": "containers"
+    },
+    "items": "products selected",
+    "formTitle": "Your details",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "company": "Company",
+    "email": "E-mail",
+    "phone": "Phone",
+    "country": "Country",
+    "destination": "Delivery country",
+    "period": "Desired period",
+    "periodHint": "e.g. weekly from November, or a one-off shipment in March",
+    "message": "Message",
+    "messageHint": "Packaging, calibre, certification, Incoterm…",
+    "required": "Required fields",
+    "submit": "Send my quote request",
+    "sending": "Sending…",
+    "success": "Thank you, your quote request has been sent. We'll come back to you with availability and prices.",
+    "error": "Your request could not be sent. Please write to us directly at",
+    "whatsappSend": "Send on WhatsApp",
+    "whatsappHint": "Opens WhatsApp with your selection and details, ready to send.",
+    "whatsappGreeting": "Hello Euravia, I would like a quote for:",
+    "destinationPick": "Choose a country",
+    "destinationOther": "Other (tell us in the message)",
+    "destinations": [
+      "Spain",
+      "France",
+      "The Netherlands",
+      "Germany",
+      "Denmark",
+      "Sweden",
+      "Norway"
+    ]
+  },
+  "privacy": {
+    "title": "Privacy policy",
+    "lead": "How Euravia handles the personal data you send us through this website.",
+    "sections": [
+      {
+        "h": "Who we are",
+        "p": "Euravia, with offices at Mississippidreef 95, 3565 CE Utrecht, the Netherlands, and in Casablanca, Morocco, is responsible for the processing of personal data described here. Contact: info@euraviafoods.com."
+      },
+      {
+        "h": "What we collect",
+        "p": "Only what you type into the contact and quote forms: name, company, e-mail address, phone number, country, the products you selected and your message."
+      },
+      {
+        "h": "Why",
+        "p": "To answer your request and, if you become a customer, to prepare and follow up quotes and orders. The legal basis is your request (pre-contractual steps) and our legitimate interest in answering business enquiries."
+      },
+      {
+        "h": "How long",
+        "p": "Enquiries that do not lead to business are deleted after 24 months. Customer records are kept as long as required by tax and commercial law."
+      },
+      {
+        "h": "Sharing",
+        "p": "We do not sell your data. Form messages are delivered through our e-mail provider. Logistics partners only receive what is needed to deliver an order."
+      },
+      {
+        "h": "Cookies",
+        "p": "This website sets no tracking cookies. Your quote selection and language choice are stored in your own browser (local storage) and never sent to us until you submit a form."
+      },
+      {
+        "h": "Your rights",
+        "p": "You may ask to access, correct or delete your data, or object to its use, by writing to info@euraviafoods.com. You may also complain to the Dutch Data Protection Authority (Autoriteit Persoonsgegevens)."
+      }
+    ]
+  },
+  "footer": {
+    "navTitle": "Navigation",
+    "productsTitle": "Our ranges",
+    "contactTitle": "Contact",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy policy",
+    "backToTop": "Back to top"
+  }
+}

@@ -1,0 +1,343 @@
+/*
+ * Design tokens — see docs/04-design-system.md.
+ *
+ * The layout grammar is moreco.ma's (the client's reference); the palette is the produce
+ * itself, since there is no logo yet: leaf green for the brand and the vegetables, citrus
+ * orange for the fruit and the accents, ice blue for the frozen range. Re-tune here the
+ * day a logo arrives — nothing else hard-codes a colour.
+ */
+
+:root {
+  --brand: #1f6b3f;
+  --brand-dark: #17532f;
+  --brand-darker: #0f3a21;
+  --sun: #e9792b;
+  --sun-dark: #b4561a;
+  --ice: #2a78b5;
+  --ice-dark: #1d5a8a;
+
+  /* Category identity — the moreco segment colours, recast for produce. */
+  --cat-veg: var(--brand);
+  --cat-fruit: var(--sun-dark);
+  --cat-frozen: var(--ice);
+
+  /* Ink and paper (warm off-whites) */
+  --ink: #13201a;
+  --ink-2: #3d4a43;
+  --ink-3: #5f6b64;
+  --line: #e2e6df;
+  --line-strong: #cbd3c8;
+  --paper: #ffffff;
+  --paper-2: #f6f7f2;
+  --paper-3: #edf0e8;
+  --footer: #0c1712;
+
+  /* Type scale */
+  --step--1: clamp(0.83rem, 0.81rem + 0.1vw, 0.89rem);
+  --step-0: clamp(1rem, 0.97rem + 0.15vw, 1.09rem);
+  --step-1: clamp(1.2rem, 1.14rem + 0.3vw, 1.4rem);
+  --step-2: clamp(1.44rem, 1.33rem + 0.55vw, 1.8rem);
+  --step-3: clamp(1.73rem, 1.54rem + 0.95vw, 2.3rem);
+  --step-4: clamp(2.07rem, 1.76rem + 1.55vw, 3rem);
+  --step-5: clamp(2.2rem, 1.6rem + 2.6vw, 4.25rem);
+
+  /* Rhythm */
+  --gutter: clamp(1.15rem, 0.9rem + 1.2vw, 2rem);
+  --page: 1320px;
+  --page-narrow: 780px;
+  --radius: 4px;
+  --radius-lg: 10px;
+
+  /* Header heights — the hero needs them. */
+  --topbar-h: 38px;
+  --header-h: 88px;
+  --header-h-scrolled: 68px;
+
+  --shadow-1: 0 1px 2px rgb(19 32 26 / 0.06), 0 2px 8px rgb(19 32 26 / 0.05);
+  --shadow-2: 0 4px 12px rgb(19 32 26 / 0.08), 0 12px 32px rgb(19 32 26 / 0.08);
+
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans), system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: var(--step-0);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0 0 0.5em;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: var(--step-4);
+}
+h2 {
+  font-size: var(--step-3);
+}
+h3 {
+  font-size: var(--step-2);
+}
+h4 {
+  font-size: var(--step-1);
+}
+
+p {
+  margin: 0 0 1em;
+  text-wrap: pretty;
+}
+
+a {
+  color: inherit;
+  text-decoration-color: color-mix(in srgb, currentColor 35%, transparent);
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  text-decoration-color: currentColor;
+}
+
+img,
+svg,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul,
+ol {
+  margin: 0 0 1em;
+  padding-inline-start: 1.2em;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--ice);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ---------- layout helpers ---------- */
+
+.page {
+  width: min(100% - var(--gutter) * 2, var(--page));
+  margin-inline: auto;
+}
+
+.page-narrow {
+  width: min(100% - var(--gutter) * 2, var(--page-narrow));
+  margin-inline: auto;
+}
+
+.section {
+  padding-block: clamp(3rem, 2rem + 4vw, 6rem);
+}
+
+.section--tint {
+  background: var(--paper-2);
+}
+
+.section-head {
+  max-width: 52rem;
+  margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.section-head h2 {
+  margin: 0;
+}
+
+.section-head p {
+  margin: 0.75rem 0 0;
+  color: var(--ink-2);
+}
+
+.section-head--center {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.lead {
+  font-size: var(--step-1);
+  color: var(--ink-2);
+  max-width: 62ch;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 0.9rem;
+  font-size: var(--step--1);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--brand-dark);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.skip-link {
+  position: absolute;
+  inset-inline-start: 0.5rem;
+  top: -100%;
+  z-index: 200;
+  padding: 0.7rem 1.1rem;
+  background: var(--ink);
+  color: #fff;
+  border-radius: var(--radius);
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0.5rem;
+}
+
+/* ---------- buttons ---------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.8rem 1.4rem;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  background: var(--brand);
+  color: #fff;
+  font-weight: 600;
+  font-size: var(--step-0);
+  line-height: 1.2;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.18s var(--ease), border-color 0.18s var(--ease), color 0.18s var(--ease);
+}
+
+.btn:hover {
+  background: var(--brand-dark);
+}
+
+.btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.btn--ghost {
+  background: transparent;
+  border-color: var(--line-strong);
+  color: var(--ink);
+}
+
+.btn--ghost:hover {
+  background: var(--paper-2);
+  border-color: var(--ink-3);
+}
+
+.btn--inverse {
+  background: rgb(255 255 255 / 0.12);
+  border-color: rgb(255 255 255 / 0.7);
+  color: #fff;
+  backdrop-filter: blur(4px);
+}
+
+.btn--inverse:hover {
+  background: #fff;
+  color: var(--ink);
+  border-color: #fff;
+}
+
+/* Orange call to action. Dark ink on the sun colour: white on it fails contrast (2.9:1). */
+.btn--sun {
+  background: var(--sun);
+  border-color: var(--sun);
+  color: var(--ink);
+}
+
+.btn--sun:hover {
+  background: #f39a55;
+  border-color: #f39a55;
+}
+
+/* ---------- scroll reveal ----------
+ * Used by FeatureRow, the trials and the segment cards. An IntersectionObserver adds
+ * `is-in` when the element first scrolls into view.
+ *
+ * The hidden state is scoped to `html.js`, a class set by an inline script in the
+ * layout. If that script never runs — JavaScript off, or a crawler that does not
+ * execute it — nothing is ever hidden, so the page cannot end up blank.
+ */
+
+.js .reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.js .reveal.is-in {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .js .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/*
+ * A page may end on a full-bleed band — the home page's quote CTA. Marked with
+ * `data-flush-footer`, it collapses the footer's top gap so the band and the footer form
+ * one continuous dark base instead of two blocks with a light strip between them.
+ * Browsers without `:has()` simply keep the normal gap.
+ */
+main:has(> [data-flush-footer]:last-child) + footer {
+  margin-top: 0;
+}

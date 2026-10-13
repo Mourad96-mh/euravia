@@ -1,0 +1,208 @@
+{
+  "tomatoes": {
+    "name": "Tomatoes",
+    "tagline": "Natural sweetness, firm texture and a long shelf life.",
+    "intro": "Grown under optimal climate conditions, our Moroccan tomatoes offer the right balance of natural sweetness, firm texture and a prolonged shelf life.",
+    "body": [
+      "Morocco's mild winters and long sunshine hours let growers deliver tomatoes when European production is low. We select fruit for uniform calibre and colour, and pack it to keep its firmness through transport to your distribution centre."
+    ],
+    "highlights": ["Balanced natural sweetness", "Firm texture that travels well", "Prolonged shelf life", "Uniform calibre and colour"],
+    "origin": "Morocco"
+  },
+  "cherry-tomatoes": {
+    "name": "Cherry tomatoes",
+    "tagline": "Consistent sizing, uniform colour and high Brix.",
+    "intro": "Sourced directly from highly sophisticated greenhouse facilities in Morocco's top-tier growing zones, including Souss-Massa.",
+    "body": [
+      "Our cherry tomatoes offer exceptionally consistent sizing, uniform colouring and high Brix levels: the reliable, premium sweet flavour profile that consumers demand."
+    ],
+    "highlights": ["Greenhouse grown in Souss-Massa", "Exceptionally consistent sizing", "Uniform colouring", "High Brix, premium sweet flavour"],
+    "origin": "Morocco · Souss-Massa"
+  },
+  "kapia-pepper": {
+    "name": "Kapia peppers",
+    "tagline": "Sweet, non-spicy pointed peppers for grilling and salads.",
+    "intro": "Elevate your fresh produce aisle with premium Moroccan Kapia peppers.",
+    "body": [
+      "Characterised by their distinct conical shape and exceptionally sweet, non-spicy flesh, these pointed peppers are a staple for grilling, roasting and slicing fresh into salads.",
+      "Grown by expert farmers in Morocco, they benefit from an ideal climate that guarantees consistent colouring, firm texture and an extended shelf life."
+    ],
+    "highlights": ["Distinct conical shape", "Exceptionally sweet, non-spicy flesh", "Ideal for grilling, roasting and salads", "Consistent colouring and extended shelf life"],
+    "origin": "Morocco"
+  },
+  "california-pepper": {
+    "name": "California peppers",
+    "tagline": "Sun-ripened red, green and yellow block peppers.",
+    "intro": "Discover the vibrant taste and quality of our California Wonder peppers, sourced directly from the fertile, sun-drenched fields of Morocco's premier agricultural regions such as Souss-Massa.",
+    "body": [
+      "Known for their thick, crunchy walls and symmetrical blocky shape, our red, green and yellow California peppers are carefully harvested, washed and sorted to meet rigorous international standards."
+    ],
+    "highlights": ["Red, green and yellow", "Thick, crunchy walls", "Symmetrical blocky shape", "Harvested, washed and sorted to international standards"],
+    "origin": "Morocco · Souss-Massa"
+  },
+  "chili-peppers": {
+    "name": "Chili peppers",
+    "tagline": "From a mild colourful kick to fiery heat, all year round.",
+    "intro": "Tap into the global demand for spicy culinary experiences with fresh chili peppers straight from Morocco.",
+    "body": [
+      "Sun-ripened to perfection, these peppers range from a mild, colourful kick to intensely hot, fiery profiles, for hot-sauce manufacturers, gourmet retailers and adventurous consumers.",
+      "With a streamlined, highly integrated trade route straight into Europe, you get peak freshness, strong visual appeal and a steady year-round supply for your shelves."
+    ],
+    "highlights": ["Mild to intensely hot profiles", "For sauce makers, retailers and food service", "Short, integrated route into Europe", "Steady year-round supply"],
+    "origin": "Morocco",
+    "availability": "Year-round"
+  },
+  "eggplant": {
+    "name": "Eggplants (aubergines)",
+    "tagline": "Glossy, uniform and firm, from November to June.",
+    "intro": "Capitalise on Morocco's ideal growing climate with our premium selection of fresh eggplants.",
+    "body": [
+      "Cultivated in state-of-the-art greenhouse facilities, primarily in the high-yield Souss-Massa region, our eggplants have a deep glossy shine, uniform sizing and firm, dense flesh with an excellent shelf life.",
+      "Thanks to Morocco's early harvest, we offer an extended export season from November through June. Every shipment complies with international quality standards, with full traceability, GlobalG.A.P. certification and careful temperature control (kept above 10 °C) to preserve freshness from farm to delivery."
+    ],
+    "highlights": ["Deep glossy shine, uniform sizing", "Firm, dense flesh", "GlobalG.A.P. certified, fully traceable", "Cold chain kept above 10 °C"],
+    "origin": "Morocco · Souss-Massa",
+    "availability": "November – June",
+    "certification": "GlobalG.A.P.",
+    "storage": "Above 10 °C"
+  },
+  "zucchini": {
+    "name": "Zucchini (courgettes)",
+    "tagline": "Crisp, sustainably grown and reliably supplied.",
+    "intro": "Freshness, quality and reliable supply: the finest sustainably grown zucchini, sourced directly from the fertile agricultural regions of Morocco.",
+    "body": [
+      "We bridge the gap between dedicated Moroccan growers and international markets, delivering premium, crisp, high-quality produce right to your facility."
+    ],
+    "highlights": ["Sustainably grown", "Crisp, premium quality", "Direct from Moroccan growers", "Delivered to your facility"],
+    "origin": "Morocco"
+  },
+  "green-beans": {
+    "name": "Green beans",
+    "tagline": "Slender, stringless and vibrant green.",
+    "intro": "Moroccan green beans are known for their delicate crunch, slender shape, vibrant green colour and stringless texture.",
+    "body": [
+      "Hand-picked and graded, they are packed to keep their snap and colour all the way to your shelves."
+    ],
+    "highlights": ["Delicate crunch", "Slender shape", "Vibrant green colour", "Stringless texture"],
+    "origin": "Morocco"
+  },
+  "avocado": {
+    "name": "Avocados",
+    "tagline": "High oil content, creamy texture and rich flavour.",
+    "intro": "Morocco's microclimate, where warm coastal days meet cool Atlantic nights, gives ideal conditions for growing world-class avocados.",
+    "body": [
+      "The result is fruit with exceptional oil content, a creamy texture and a rich flavour, sorted and packed for retail and wholesale programmes."
+    ],
+    "highlights": ["Exceptional oil content", "Creamy texture", "Rich flavour", "Grown on Morocco's Atlantic coast"],
+    "origin": "Morocco · Atlantic coast"
+  },
+  "citrus": {
+    "name": "Citrus",
+    "tagline": "Sweet, juicy fruit with excellent peel quality.",
+    "intro": "Morocco is renowned worldwide for its citrus fruit.",
+    "body": [
+      "Its terrain, shielded by the Atlas Mountains and nourished by Atlantic and Mediterranean breezes, creates the right environment for outstanding sweetness, juiciness and peel quality."
+    ],
+    "highlights": ["Outstanding sweetness", "Juicy fruit", "Excellent peel quality", "Atlas-sheltered orchards"],
+    "origin": "Morocco"
+  },
+  "strawberries": {
+    "name": "Strawberries",
+    "tagline": "Intense aroma, firm texture, early-season supply.",
+    "intro": "Our strawberries ripen under the Moroccan sun, developing an intense aroma, a balanced sweetness and a firm texture that gives an excellent shelf life.",
+    "body": [
+      "Thanks to Morocco's favourable climate, the main harvest starts early in the season, so we can supply premium berries to European and global markets when local production is low."
+    ],
+    "highlights": ["Intense aroma", "Balanced sweetness", "Firm texture, excellent shelf life", "Early-season supply for Europe"],
+    "origin": "Morocco",
+    "availability": "Early season"
+  },
+  "raspberries": {
+    "name": "Raspberries",
+    "tagline": "Robust berries that arrive looking freshly picked.",
+    "intro": "We select raspberry varieties bred for excellence.",
+    "body": [
+      "Our raspberries have a robust structure that resists bruising, so they arrive at your distribution hubs looking as immaculate as the day they were picked."
+    ],
+    "highlights": ["Selected varieties", "Robust, bruise-resistant structure", "Arrive looking freshly picked"],
+    "origin": "Morocco"
+  },
+  "blueberries": {
+    "name": "Blueberries",
+    "tagline": "Jumbo size, firm crunch and shelf-ready quality.",
+    "intro": "Grown in ideal coastal microclimates and bathed in year-round sunshine, Moroccan blueberries are celebrated for their jumbo size, firm crunch and rich antioxidant profile.",
+    "body": [
+      "We deliver premium, shelf-ready berries directly to international retailers and distributors."
+    ],
+    "highlights": ["Jumbo size", "Firm crunch", "Rich antioxidant profile", "Shelf-ready for retail"],
+    "origin": "Morocco · coastal regions"
+  },
+  "watermelon": {
+    "name": "Watermelons",
+    "tagline": "High Brix, crisp and refreshing, at scale.",
+    "intro": "Grown in Morocco's sunniest regions, our watermelons are known for their high Brix (sugar) levels, crisp texture and refreshing taste.",
+    "body": [
+      "We manage everything from field harvesting to international shipping, for large-scale deliveries to retail, wholesale and catering markets worldwide."
+    ],
+    "highlights": ["High Brix (sugar) levels", "Crisp texture", "Field to shipping, managed by us", "Large-scale volumes"],
+    "origin": "Morocco · Spain"
+  },
+  "melon": {
+    "name": "Melons",
+    "tagline": "Sweet, fragrant melons from sun-drenched Mediterranean fields.",
+    "intro": "Sweet, fragrant melons from the sunniest growing regions of Morocco and the Mediterranean.",
+    "body": [
+      "Harvested at the right maturity and packed to keep their aroma and sweetness, our melons are supplied to retail, wholesale and catering customers. Ask us for current varieties and calibres."
+    ],
+    "highlights": ["Harvested at the right maturity", "Sweet and fragrant", "For retail, wholesale and catering"],
+    "origin": "Morocco · Mediterranean"
+  },
+  "iqf-strawberries": {
+    "name": "IQF strawberries",
+    "tagline": "From one of the world's top five frozen-strawberry exporters.",
+    "intro": "Morocco is one of the world's top five exporters of frozen strawberries, favoured by an ideal climate and fertile soil.",
+    "body": [
+      "At Euravia we manage the entire supply chain. By overseeing field selection, harvesting, processing and cold-chain logistics, we make sure our fruit meets your exact B2B specifications."
+    ],
+    "highlights": ["Individually quick frozen (IQF)", "Field selection to cold chain, managed by us", "Built to your B2B specification", "Year-round availability"],
+    "origin": "Morocco",
+    "availability": "Year-round",
+    "storage": "−18 °C"
+  },
+  "iqf-blackberries": {
+    "name": "IQF blackberries",
+    "tagline": "Plump, sweet, deeply coloured, all year round.",
+    "intro": "Morocco's climate produces exceptionally plump, sweet and deeply coloured blackberries.",
+    "body": [
+      "By applying IQF technology straight after harvest, we offer international buyers a reliable, year-round supply of premium fruit that rivals fresh-picked quality."
+    ],
+    "highlights": ["Plump, sweet and deeply coloured", "Frozen straight after harvest", "Close to fresh-picked quality", "Reliable year-round supply"],
+    "origin": "Morocco",
+    "availability": "Year-round",
+    "storage": "−18 °C"
+  },
+  "iqf-raspberries": {
+    "name": "IQF raspberries",
+    "tagline": "Fragrant ruby-red berries, flash-frozen at harvest.",
+    "intro": "Morocco's climate balances sunshine and mild temperatures to grow exceptionally fragrant, sweet and structurally sound raspberries.",
+    "body": [
+      "Flash-frozen right after harvest, they keep the berry's delicate flavour and intense ruby-red colour, a premium product whatever the season."
+    ],
+    "highlights": ["Fragrant and sweet", "Structurally sound berries", "Intense ruby-red colour", "Premium quality in any season"],
+    "origin": "Morocco",
+    "availability": "Year-round",
+    "storage": "−18 °C"
+  },
+  "iqf-blueberries": {
+    "name": "IQF blueberries",
+    "tagline": "Sweet-tart, deep blue and naturally firm.",
+    "intro": "Morocco has become a leading global player in blueberry growing.",
+    "body": [
+      "Its northern and coastal regions have mild winters and rich soils where blueberries develop an excellent sweet-tart balance, intense deep-blue colour and natural firmness. Frozen right after harvest, they give international buyers premium fruit with long-term supply stability."
+    ],
+    "highlights": ["Sweet-tart balance", "Intense deep-blue colour", "Natural firmness", "Long-term supply stability"],
+    "origin": "Morocco · north and coast",
+    "availability": "Year-round",
+    "storage": "−18 °C"
+  }
+}
