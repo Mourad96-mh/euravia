@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import s from './HeroVideo.module.css';
 
 /**
@@ -9,8 +9,8 @@ import s from './HeroVideo.module.css';
  * text sliding up from behind a mask on load — their theme calls the two halves
  * `animation-cropper` / `animation-contents`.
  *
- * The poster carries the first paint (so the LCP is an image, not the video), and under
- * `prefers-reduced-motion` the video is never attached at all.
+ * The poster carries the first paint (so the LCP is an image, not the video), and on
+ * a phone that blocks autoplay it stays up until the first gesture starts the film.
  *
  * Every text prop is optional. The home page passes none of them: the client's briefing
  * of 2026-09-09 took the title, the subtitle and the quote button off the film, leaving
@@ -38,36 +38,49 @@ export interface HeroVideoProps {
 
 export default function HeroVideo({ title, subtitle, ctas, eyebrow, poster, sources, credit, caption }: HeroVideoProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [motion, setMotion] = useState(false);
 
-  useEffect(() => {
-    const query = window.matchMedia('(prefers-reduced-motion: reduce)');
-    const apply = () => setMotion(!query.matches);
-    apply();
-    query.addEventListener('change', apply);
-    return () => query.removeEventListener('change', apply);
-  }, []);
-
+  /*
+   * The client wants the film running on every phone (2026-10-14), so it ignores
+   * prefers-reduced-motion. When a phone blocks autoplay (iOS Low Power Mode, data
+   * saver), the first touch, scroll or click on the page starts it — any user gesture
+   * lifts the block — and it restarts whenever the tab comes back into view.
+   */
   useEffect(() => {
     const video = videoRef.current;
-    if (!video || !motion) return;
+    if (!video) return;
     // Some browsers refuse autoplay until the element is muted in the DOM, not just in JSX.
     video.muted = true;
-    void video.play().catch(() => {
-      /*
-       * Autoplay blocked (iOS Low Power Mode, data saver): swap to the plain poster image,
-       * otherwise the browser paints its own play button over the hero.
-       */
-      setMotion(false);
-    });
-  }, [motion]);
+    video.defaultMuted = true;
+
+    const gestures = ['touchstart', 'pointerdown', 'scroll', 'keydown'] as const;
+    const tryPlay = () => {
+      if (!video.paused) return;
+      void video.play().then(stopListening, () => {
+        /* Still blocked: the poster shows and the next gesture tries again. */
+      });
+    };
+    const onVisible = () => {
+      if (document.visibilityState === 'visible') tryPlay();
+    };
+    function stopListening() {
+      gestures.forEach((type) => window.removeEventListener(type, tryPlay));
+    }
+
+    gestures.forEach((type) => window.addEventListener(type, tryPlay, { passive: true }));
+    document.addEventListener('visibilitychange', onVisible);
+    tryPlay();
+    return () => {
+      stopListening();
+      document.removeEventListener('visibilitychange', onVisible);
+    };
+  }, []);
 
   const bare = !title && !subtitle && !ctas?.length;
 
   return (
     <section className={`${s.hero} ${bare ? s.bare : ''}`}>
       <div className={s.media}>
-        {motion && sources.length > 0 ? (
+        {sources.length > 0 ? (
           <video
             ref={videoRef}
             className={s.video}
@@ -78,7 +91,7 @@ export default function HeroVideo({ title, subtitle, ctas, eyebrow, poster, sour
             autoPlay
             controls={false}
             disablePictureInPicture
-            preload="metadata"
+            preload="auto"
             aria-hidden="true"
             tabIndex={-1}
           >
