@@ -43,3 +43,5 @@ next-env.d.ts
 
 # form mailers: holds the mailbox password
 /public/api/mail-config.php
+
+.vercel
